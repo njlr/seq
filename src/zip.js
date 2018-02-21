@@ -2,7 +2,7 @@ const arrayToGenerator = function * (xs) {
   yield * xs;
 };
 
-export const zip = function * (xs, ys) {
+export const zip = ys => function * (xs) {
   const xsGenerator = Array.isArray(xs) ? 
     arrayToGenerator(xs) : 
     xs;

@@ -3,7 +3,7 @@ import * as seq from '../src';
 test('reduce works for a simple case 1', () => {
 
   const actual = [ 1, 2, 3 ] 
-    |> (_ => seq.reduce(0, (s, x) => s + x, _));
+    |> seq.reduce(0, (s, x) => s + x);
   
   const expected = 6;
 
@@ -13,7 +13,7 @@ test('reduce works for a simple case 1', () => {
 test('reduce works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
-    |> (_ => seq.reduce('', (s, x) => s + x, _));
+    |> seq.reduce('', (s, x) => s + x);
   
   const expected = 'abc';
 
@@ -23,7 +23,7 @@ test('reduce works for a simple case 2', () => {
 test('reduce works for the empty case', () => {
 
   const actual = [] 
-    |> (_ => seq.reduce(0, (s, x) => s + x, _));
+    |> seq.reduce(0, (s, x) => s + x);
   
   const expected = 0;
 

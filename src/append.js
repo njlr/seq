@@ -1,4 +1,4 @@
-export const append = function * (x, xs) {
+export const append = x => function * (xs) {
   for (const x of xs) {
     yield x;
   }

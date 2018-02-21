@@ -1,4 +1,6 @@
-export const unique = function * (e, xs) {
+import { defaultEquality } from './default-equality.js';
+
+export const unique = (e = defaultEquality) => function * (xs) {
   const { hashCode, isEqual } = e;
   const buckets = new Map();
   for (const x of xs) {
