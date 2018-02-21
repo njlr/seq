@@ -1,3 +1,5 @@
 /node_modules/
 /__tests__/
 /src/
+/.babelrc
+/rollup.config.js

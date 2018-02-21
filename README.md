@@ -19,7 +19,7 @@ yarn add @njlr/seq
 ## Demo
 
 ```javascript=
-import * as seq from 'seq';
+import * as seq from '@njlr/seq';
 
 const x = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] 
   |> (_ => unique(seq.defaultEquality, _))

@@ -1,7 +1,8 @@
 {
   "name": "@njlr/seq",
-  "version": "1.0.0",
-  "entry": "./lib/index.js",
+  "version": "1.0.1",
+  "entry": "./src/index.js",
+  "main": "./lib/index.js",
   "repository": "git@github.com:njlr/seq.git",
   "author": "njlr <njlr@users.noreply.github.com>",
   "license": "MIT",
