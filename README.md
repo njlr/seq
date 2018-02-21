@@ -2,6 +2,8 @@
 
 A simple library for manipulating generators and arrays in JavaScript. 
 
+[![Travis](https://img.shields.io/travis/njlr/seq.svg)](https://travis-ci.org/njlr/seq) 
+
 ```
 yarn add @njlr/seq
 ```
@@ -22,10 +24,10 @@ yarn add @njlr/seq
 import * as seq from '@njlr/seq';
 
 const x = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] 
-  |> (_ => unique(seq.defaultEquality, _))
-  |> (_ => seq.map(x => x * 2, _))
-  |> (_ => seq.filter(x => x > 4, _))
-  |> (_ => seq.sorted(seq.defaultComparison, _))
+  |> seq.unique()
+  |> seq.map(x => x * 2)
+  |> seq.filter(x => x > 4)
+  |> seq.sorted()
   |> seq.toArray;
 
 // x is [ 6, 8, 10, 14 ]
