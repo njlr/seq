@@ -1,0 +1,25 @@
+{
+  "name": "seq",
+  "version": "1.0.0",
+  "entry": "./lib/index.js",
+  "repository": "git@github.com:njlr/seq.git",
+  "author": "njlr <njlr@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c ",
+    "test": "jest",
+    "prepublishOnly": "test && build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/node": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.4.0",
+    "jest": "^22.4.0",
+    "regenerator-runtime": "^0.11.1",
+    "rollup": "^0.56.2",
+    "rollup-plugin-babel": "^4.0.0-beta.0"
+  }
+}
