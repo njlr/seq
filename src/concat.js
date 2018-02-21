@@ -1,4 +1,4 @@
-export const concat = function * (ys, xs) {
+export const concat = ys => function * (xs) {
   for (const x of xs) {
     yield x;
   }

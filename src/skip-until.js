@@ -1,4 +1,4 @@
-export const skipUntil = function * (f, xs) {
+export const skipUntil = f => function * (xs) {
   let shouldYield = false;
   for (const x of xs) {
     if (shouldYield) {

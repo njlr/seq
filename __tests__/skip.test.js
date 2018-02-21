@@ -3,7 +3,7 @@ import * as seq from '../src';
 test('skip works for a simple case 1', () => {
 
   const actual = [ 'a', 'b', 'c', 'd' ] 
-    |> (_ => seq.skip(2, _))
+    |> seq.skip(2)
     |> seq.toArray;
   
   const expected = [ 'c', 'd' ];
@@ -14,7 +14,7 @@ test('skip works for a simple case 1', () => {
 test('skip works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
-    |> (_ => seq.skip(5, _))
+    |> seq.skip(5)
     |> seq.toArray;
   
   const expected = [];
@@ -25,7 +25,7 @@ test('skip works for a simple case 2', () => {
 test('skip works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
-    |> (_ => seq.skip(0, _))
+    |> seq.skip(0)
     |> seq.toArray;
   
   const expected = [ 'a', 'b', 'c' ];
@@ -36,7 +36,7 @@ test('skip works for a simple case 2', () => {
 test('skip works for the empty case', () => {
 
   const actual = [] 
-    |> (_ => seq.skip(5, _))
+    |> seq.skip(5)
     |> seq.toArray;
   
   const expected = [];

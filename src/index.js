@@ -1,3 +1,5 @@
+export { all } from './all.js';
+export { any } from './any.js';
 export { append } from './append.js';
 export { concat } from './concat.js';
 export { count } from './count.js';

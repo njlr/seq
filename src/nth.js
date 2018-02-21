@@ -1,4 +1,4 @@
-export const nth = function(n, xs) {
+export const nth = n => function(xs) {
   if (n < 0) {
     throw new RangeError('n must be at least zero');
   }

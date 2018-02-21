@@ -1,4 +1,4 @@
-export const reduce = function(s, f, xs) {
+export const reduce = (s, f) => function(xs) {
   for (const x of xs) {
     s = f(s, x);
   }

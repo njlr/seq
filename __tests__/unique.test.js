@@ -1,6 +1,6 @@
 import * as seq from '../src';
 
-const numberEquality = {
+const numericEquality = {
   hashCode: x => x, 
   isEqual: (x ,y) => x === y,
 };
@@ -8,7 +8,7 @@ const numberEquality = {
 test('unique works for a simple case 1', () => {
 
   const actual = [ 0, 0, 2, 3, 4, 4, 3, 7, 0 ] 
-    |> (_ => seq.unique(numberEquality, _))
+    |> seq.unique(numericEquality)
     |> seq.toArray;
   
   const expected = [ 0, 2, 3, 4, 7 ];
@@ -19,7 +19,7 @@ test('unique works for a simple case 1', () => {
 test('unique works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'a', 'c', 'c' ] 
-    |> (_ => seq.unique(seq.defaultEquality, _))
+    |> seq.unique(seq.defaultEquality)
     |> seq.toArray;
   
   const expected = [ 'a', 'b', 'c' ];
@@ -30,7 +30,7 @@ test('unique works for a simple case 2', () => {
 test('unique works for a simple case 3', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
-    |> (_ => seq.unique(seq.defaultEquality, _))
+    |> seq.unique()
     |> seq.toArray;
   
   const expected = [ 'a', 'b', 'c' ];
@@ -41,7 +41,7 @@ test('unique works for a simple case 3', () => {
 test('unique works for the empty case', () => {
 
   const actual = [] 
-    |> (_ => seq.unique(numberEquality, _))
+    |> seq.unique(numericEquality)
     |> seq.toArray;
   
   const expected = [];
