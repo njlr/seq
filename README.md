@@ -3,7 +3,7 @@
 A simple library for manipulating generators and arrays in JavaScript. 
 
 ```
-yarn add seq
+yarn add @njlr/seq
 ```
 
 
@@ -11,8 +11,8 @@ yarn add seq
 
  * Some of the built-in Array functions are mutating (e.g. `Array.prototype.sort`)
  * Many array functions are missing. Where is `Array.prototype.flatMap`?
- * A chain of array functions creates a new array at every stage: the operations are not lazy
- * lodash and friends require a wrapper object for chaining calls. We use `|>` to achieve this at compile-time! 
+ * A chain of array functions creates a new array at every stage: the operations are not lazy. 
+ * [lodash](https://lodash.com/) and [friends](https://github.com/jussi-kalliokoski/trine) require a wrapper object for chaining calls. We use `|>` to achieve this at compile-time! 
  * This package is a good citizen. It has no dependencies and does not mutate any global objects. 
 
 

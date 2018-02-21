@@ -1,5 +1,5 @@
 {
-  "name": "seq",
+  "name": "@njlr/seq",
   "version": "1.0.0",
   "entry": "./lib/index.js",
   "repository": "git@github.com:njlr/seq.git",
