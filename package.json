@@ -1,6 +1,6 @@
 {
   "name": "@njlr/seq",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "entry": "./src/index.js",
   "main": "./lib/index.js",
   "repository": "git@github.com:njlr/seq.git",
@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rollup -c ",
     "test": "jest",
-    "prepublishOnly": "test && build"
+    "prepublishOnly": "yarn test && yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
