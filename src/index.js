@@ -1,6 +1,7 @@
 export { all } from './all.js';
 export { any } from './any.js';
 export { append } from './append.js';
+export { buffer } from './buffer.js';
 export { concat } from './concat.js';
 export { count } from './count.js';
 export { defaultComparison } from './default-comparison.js';
