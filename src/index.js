@@ -12,6 +12,7 @@ export { take } from './take.js';
 export { takeWhile } from './take-while.js';
 export { last } from './last.js';
 export { map } from './map.js';
+export { none } from './none.js';
 export { nth } from './nth.js';
 export { prepend } from './prepend.js';
 export { reduce } from './reduce.js';
