@@ -1,5 +1,7 @@
 /node_modules/
 /lib/
+/npm-error.log
+/yarn-error.log
 
 # We use Yarn
 /package-lock.json
