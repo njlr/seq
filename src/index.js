@@ -15,6 +15,7 @@ export { last } from './last.js';
 export { map } from './map.js';
 export { none } from './none.js';
 export { nth } from './nth.js';
+export { once } from './once.js';
 export { prepend } from './prepend.js';
 export { reduce } from './reduce.js';
 export { repeat } from './repeat.js';
