@@ -23,6 +23,7 @@ export { single } from './single.js';
 export { skipUntil } from './skip-until.js';
 export { skip } from './skip.js';
 export { sorted } from './sorted.js';
+export { strictEquality } from './strict-equality.js';
 export { toArray } from './to-array.js';
 export { unique } from './unique.js';
 export { zip } from './zip.js';
