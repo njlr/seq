@@ -1,6 +1,6 @@
-export const count = function(xs) {
+export const count = xs => {
   let i = 0;
-  for (const _ of xs) {
+  for (const _ of xs()()) {
     i++;
   }
   return i;

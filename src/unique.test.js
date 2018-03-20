@@ -8,6 +8,7 @@ const numericEquality = {
 test('unique works for a simple case 1', () => {
 
   const actual = [ 0, 0, 2, 3, 4, 4, 3, 7, 0 ] 
+    |> seq.fromArray
     |> seq.unique(numericEquality)
     |> seq.toArray;
   
@@ -19,6 +20,7 @@ test('unique works for a simple case 1', () => {
 test('unique works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'a', 'c', 'c' ] 
+    |> seq.fromArray
     |> seq.unique(seq.defaultEquality)
     |> seq.toArray;
   
@@ -30,6 +32,7 @@ test('unique works for a simple case 2', () => {
 test('unique works for a simple case 3', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.unique()
     |> seq.toArray;
   
@@ -41,6 +44,7 @@ test('unique works for a simple case 3', () => {
 test('unique works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.unique(numericEquality)
     |> seq.toArray;
   

@@ -2,6 +2,7 @@ import * as seq from '../src';
 
 test('append works for a simple case 1', () => {
   const actual = [] 
+    |> seq.fromArray
     |> seq.append(1)
     |> seq.toArray;
   const expected = [ 1 ];
@@ -10,6 +11,7 @@ test('append works for a simple case 1', () => {
 
 test('append works for a simple case 2', () => {
   const actual = [ 1, 2, 3 ]
+    |> seq.fromArray
     |> seq.append(7)
     |> seq.toArray;
   const expected = [ 1, 2, 3, 7 ];
@@ -18,6 +20,7 @@ test('append works for a simple case 2', () => {
 
 test('append works for a simple case 3', () => {
   const actual = [ 'b', 'c' ]
+    |> seq.fromArray
     |> seq.append('a')
     |> seq.toArray;
   const expected = [ 'b', 'c', 'a' ];

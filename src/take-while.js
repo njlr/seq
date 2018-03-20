@@ -1,8 +1,13 @@
-export const takeWhile = f => function * (xs) {
-  for (const x of xs) {
-    if (!f(x)) {
-      return;
-    }
-    yield x;
+export const takeWhile = f => {
+  if (!f) {
+    throw new TypeError('f must be a function');
   }
+  return xs => () => function * () {
+    for (const x of xs()()) {
+      if (!f(x)) {
+        return;
+      }
+      yield x;
+    }
+  };
 };

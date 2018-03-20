@@ -3,6 +3,7 @@ import * as seq from '../src';
 test('flatMap works for a simple case 1', () => {
 
   const actual = [ 0, 1, 2 ] 
+    |> seq.fromArray
     |> seq.flatMap(x => [ x, x ])
     |> seq.toArray;
   
@@ -14,6 +15,7 @@ test('flatMap works for a simple case 1', () => {
 test('flatMap works for a simple case 2', () => {
 
   const actual = [ 1, 2, 3 ] 
+    |> seq.fromArray
     |> seq.flatMap(x => [ x, -x ])
     |> seq.toArray;
   
@@ -25,6 +27,7 @@ test('flatMap works for a simple case 2', () => {
 test('flatMap works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.flatMap(x => x * 2)
     |> seq.toArray;
   

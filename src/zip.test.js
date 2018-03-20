@@ -3,6 +3,7 @@ import * as seq from '../src';
 test('zip works for a simple case 1', () => {
 
   const actual = [ 1, 2, 3 ] 
+    |> seq.fromArray
     |> seq.zip([ 'a', 'b', 'c' ])
     |> seq.toArray;
   
@@ -14,6 +15,7 @@ test('zip works for a simple case 1', () => {
 test('zip works for a simple case 2', () => {
 
   const actual = [ 1, 2, 3 ]
+    |> seq.fromArray
     |> seq.map(x => x * 2)
     |> seq.zip([ 'a', 'b', 'c' ])
     |> seq.toArray;
@@ -26,6 +28,7 @@ test('zip works for a simple case 2', () => {
 test('zip works for a simple case 3', () => {
 
   const actual = [ 1 ]
+    |> seq.fromArray
     |> seq.zip([ 'a', 'b', 'c' ])
     |> seq.toArray;
   
@@ -37,6 +40,7 @@ test('zip works for a simple case 3', () => {
 test('zip works for a simple case 4', () => {
 
   const actual = [ 1, 2, 3 ]
+    |> seq.fromArray
     |> seq.zip([])
     |> seq.toArray;
   
@@ -48,6 +52,7 @@ test('zip works for a simple case 4', () => {
 test('zip works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.zip([])
     |> seq.toArray;
   

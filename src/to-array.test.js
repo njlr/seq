@@ -1,19 +1,23 @@
 import * as seq from '../src';
 
-test('reverse works for a simple case 1', () => {
-  const actual = [ 1, 2, 3 ] 
+test('toArray works for a simple case', () => {
+
+  const actual = [ 'a', 'b', 'c' ] 
     |> seq.fromArray
-    |> seq.reverse
     |> seq.toArray;
-  const expected = [ 3, 2, 1 ];
+  
+  const expected = [ 'a', 'b', 'c' ];
+
   expect(actual).toEqual(expected);
 });
 
-test('reverse works for the empty case', () => {
+test('toArray works for the empty case', () => {
+
   const actual = [] 
     |> seq.fromArray
-    |> seq.reverse
     |> seq.toArray;
+  
   const expected = [];
+
   expect(actual).toEqual(expected);
 });

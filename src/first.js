@@ -1,6 +1,13 @@
-export const first = function(xs) {
-  for (const x of xs) {
-    return x;
+export const first = (f = _ => true) => {
+  if (!f) {
+    throw new TypeError('f must be a function');
   }
-  throw new Error('Expected at least one element');
+  return xs => {
+    for (const x of xs()()) {
+      if (f(x)) {
+        return x;
+      }
+    }
+    throw new Error('Expected at least one element');
+  };
 };

@@ -1,6 +1,4 @@
-export const prepend = x => function * (xs) {
+export const prepend = x => xs => () => function * () {
   yield x;
-  for (const x of xs) {
-    yield x;
-  }
+  yield * xs()();
 };

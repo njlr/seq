@@ -1,4 +1,4 @@
-export const range = function * (n = Infinity) {
+export const range = (n = Infinity) => () => function * () {
   if (typeof n !== 'number') {
     throw new TypeError('n must be a number');
   }

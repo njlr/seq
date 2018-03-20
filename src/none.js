@@ -1,8 +1,13 @@
-export const none = (f = x => true) => xs => {
-  for (const x of xs) {
-    if (f(x)) {
-      return false;
-    }
+export const none = (f = _ => true) => {
+  if (!f) {
+    throw new TypeError('f must be a function');
   }
-  return true;
+  return xs => {
+    for (const x of xs()()) {
+      if (f(x)) {
+        return false;
+      }
+    }
+    return true;
+  };
 };

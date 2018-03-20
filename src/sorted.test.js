@@ -3,6 +3,7 @@ import * as seq from '../src';
 test('sorted works for a simple case 1', () => {
 
   const actual = [ 4, 3, 1, 7 ] 
+    |> seq.fromArray
     |> seq.sorted()
     |> seq.toArray;
   
@@ -14,6 +15,7 @@ test('sorted works for a simple case 1', () => {
 test('sorted works for a simple case 2', () => {
 
   const actual = [ 'b', 'c', 'a' ] 
+    |> seq.fromArray
     |> seq.sorted()
     |> seq.toArray;
   
@@ -25,6 +27,7 @@ test('sorted works for a simple case 2', () => {
 test('sorted works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.sorted()
     |> seq.toArray;
   
@@ -46,6 +49,7 @@ const customComparison = function(i, j) {
 test('sorted works with a custom comparison', () => {
 
   const actual = [ 'b', 'c', 'a' ] 
+    |> seq.fromArray
     |> seq.sorted(customComparison)
     |> seq.toArray;
   
