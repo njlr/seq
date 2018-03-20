@@ -3,6 +3,7 @@ import * as seq from '../src';
 test('skip works for a simple case 1', () => {
 
   const actual = [ 'a', 'b', 'c', 'd' ] 
+    |> seq.fromArray
     |> seq.skip(2)
     |> seq.toArray;
   
@@ -14,6 +15,7 @@ test('skip works for a simple case 1', () => {
 test('skip works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.skip(5)
     |> seq.toArray;
   
@@ -25,6 +27,7 @@ test('skip works for a simple case 2', () => {
 test('skip works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.skip(0)
     |> seq.toArray;
   
@@ -36,6 +39,7 @@ test('skip works for a simple case 2', () => {
 test('skip works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.skip(5)
     |> seq.toArray;
   

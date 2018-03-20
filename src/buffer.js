@@ -1,11 +1,7 @@
-const toGenerator = function * (xs) {
-  yield * xs;
-};
-
 export const buffer = xs => {
 
   const b = [];
-  const g = toGenerator(xs);
+  const g = xs()();
 
   const addToBuffer = () => {
     const next = g.next();
@@ -16,7 +12,7 @@ export const buffer = xs => {
     return true;
   };
 
-  return function * () {
+  return () => function * () {
     let i = 0;
     while (true) {
       while (i >= b.length) {

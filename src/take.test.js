@@ -3,6 +3,7 @@ import * as seq from '../src';
 test('take works for a simple case 1', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.take(2)
     |> seq.toArray;
   
@@ -14,6 +15,7 @@ test('take works for a simple case 1', () => {
 test('take works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.take(5)
     |> seq.toArray;
   
@@ -25,6 +27,7 @@ test('take works for a simple case 2', () => {
 test('take works for a simple case 3', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.take(0)
     |> seq.toArray;
   
@@ -36,6 +39,7 @@ test('take works for a simple case 3', () => {
 test('take works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.take(2)
     |> seq.toArray;
   

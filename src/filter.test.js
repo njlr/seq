@@ -3,6 +3,7 @@ import * as seq from '../src';
 test('filter works for a simple case 1', () => {
 
   const actual = [ 0, 1, 2, 3, 4, 5, 6 ] 
+    |> seq.fromArray
     |> seq.filter(x => x % 2 === 0)
     |> seq.toArray;
   
@@ -14,6 +15,7 @@ test('filter works for a simple case 1', () => {
 test('filter works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.filter(x => true)
     |> seq.toArray;
   

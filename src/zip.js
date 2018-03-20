@@ -2,13 +2,13 @@ const arrayToGenerator = function * (xs) {
   yield * xs;
 };
 
-export const zip = ys => function * (xs) {
+export const zip = ys => xs => () => function * () {
   const xsGenerator = Array.isArray(xs) ? 
     arrayToGenerator(xs) : 
-    xs;
+    xs()();
   const ysGenerator = Array.isArray(ys) ? 
     arrayToGenerator(ys) : 
-    ys;
+    ys()();
   while (true) {
     const x = xsGenerator.next();
     const y = ysGenerator.next();
