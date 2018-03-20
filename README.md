@@ -24,6 +24,7 @@ yarn add @njlr/seq
 import * as seq from '@njlr/seq';
 
 const x = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] 
+  |> seq.fromArray
   |> seq.unique()
   |> seq.map(x => x * 2)
   |> seq.filter(x => x > 4)
