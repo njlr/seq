@@ -69,3 +69,9 @@ To build the library:
 ```bash=
 yarn build
 ```
+
+To release a new version:
+
+```bash=
+npm publish --access public 
+```
