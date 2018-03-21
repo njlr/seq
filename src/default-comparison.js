@@ -1,4 +1,4 @@
-export const defaultComparison = function(i, j) {
+export const defaultComparison = (i, j) => {
   if (i == j) {
     return 0;
   }
