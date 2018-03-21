@@ -1,7 +1,11 @@
 export const buffer = xs => {
 
+  if (!xs[Symbol.iterator]) {
+    throw new TypeError('xs must be iterable');
+  }
+
   const b = [];
-  const g = xs()();
+  const g = xs[Symbol.iterator]();
 
   const addToBuffer = () => {
     const next = g.next();
@@ -12,17 +16,19 @@ export const buffer = xs => {
     return true;
   };
 
-  return () => function * () {
-    let i = 0;
-    while (true) {
-      while (i >= b.length) {
-        const moreToAdd = addToBuffer();
-        if (!moreToAdd) {
-          return;
+  return {
+    [Symbol.iterator]: function * () {
+      let i = 0;
+      while (true) {
+        while (i >= b.length) {
+          const moreToAdd = addToBuffer();
+          if (!moreToAdd) {
+            return;
+          }
         }
+        yield b[i];
+        i++;
       }
-      yield b[i];
-      i++;
     }
   };
 };

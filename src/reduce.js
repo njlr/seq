@@ -1,6 +1,7 @@
-export const reduce = (s, f) => function(xs) {
+export const reduce = (s, f) => (xs) => {
+  let w = s;
   for (const x of xs) {
-    s = f(s, x);
+    w = f(w, x);
   }
-  return s;
+  return w;
 };

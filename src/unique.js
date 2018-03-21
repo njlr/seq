@@ -2,27 +2,29 @@ import { defaultEquality } from './default-equality.js';
 
 export const unique = (e = defaultEquality) => {
   const { hashCode, isEqual } = e;
-  return xs => () => function * () {
-    const buckets = new Map();
-    for (const x of xs()()) {
-      const h = hashCode(x);
-      const bucket = buckets.get(h);
-      if (bucket) {
-        let foundExactMatch = false;
-        for (const y of bucket) {
-          if (isEqual(x, y)) {
-            foundExactMatch = true;
-            break;
+  return xs => ({
+    [Symbol.iterator]: function * () {
+      const buckets = new Map();
+      for (const x of xs) {
+        const h = hashCode(x);
+        const bucket = buckets.get(h);
+        if (bucket) {
+          let foundExactMatch = false;
+          for (const y of bucket) {
+            if (isEqual(x, y)) {
+              foundExactMatch = true;
+              break;
+            }
           }
-        }
-        if (!foundExactMatch) {
+          if (!foundExactMatch) {
+            yield x;
+            bucket.push(x);
+          }
+        } else {
           yield x;
-          bucket.push(x);
+          buckets.set(h, [ x ]);
         }
-      } else {
-        yield x;
-        buckets.set(h, [ x ]);
       }
     }
-  };
+  });
 };

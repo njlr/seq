@@ -1,7 +1,7 @@
 export const single = xs => {
   let hasFoundValue = false;
   let y = null;
-  for (const x of xs()()) {
+  for (const x of xs) {
     if (hasFoundValue) {
       throw new Error('Expected exactly one element but found at least two');
     }

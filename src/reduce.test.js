@@ -13,6 +13,7 @@ test('reduce works for a simple case 1', () => {
 test('reduce works for a simple case 2', () => {
 
   const actual = [ 'a', 'b', 'c' ] 
+    |> seq.fromArray
     |> seq.reduce('', (s, x) => s + x);
   
   const expected = 'abc';
@@ -23,6 +24,7 @@ test('reduce works for a simple case 2', () => {
 test('reduce works for the empty case', () => {
 
   const actual = [] 
+    |> seq.fromArray
     |> seq.reduce(0, (s, x) => s + x);
   
   const expected = 0;

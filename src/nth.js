@@ -7,7 +7,7 @@ export const nth = n => {
   }
   return xs => {
     let i = 0;
-    for (const x of xs()()) {
+    for (const x of xs) {
       if (i === n) {
         return x;
       }

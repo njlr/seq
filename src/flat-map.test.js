@@ -28,7 +28,7 @@ test('flatMap works for the empty case', () => {
 
   const actual = [] 
     |> seq.fromArray
-    |> seq.flatMap(x => x * 2)
+    |> seq.flatMap(x => [ x * 2 ])
     |> seq.toArray;
   
   const expected = [];

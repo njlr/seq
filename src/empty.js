@@ -1,1 +1,3 @@
-export const empty = () => function * () {};
+export const empty = {
+  [Symbol.iterator]: function * () {}
+};

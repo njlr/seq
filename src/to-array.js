@@ -3,7 +3,7 @@ export const toArray = xs => {
     return xs;
   }
   const result = [];
-  for (const x of xs()()) {
+  for (const x of xs) {
     result.push(x);
   }
   return result;

@@ -3,7 +3,7 @@ export const none = (f = _ => true) => {
     throw new TypeError('f must be a function');
   }
   return xs => {
-    for (const x of xs()()) {
+    for (const x of xs) {
       if (f(x)) {
         return false;
       }

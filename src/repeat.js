@@ -5,9 +5,11 @@ export const repeat = n => {
   if (n < 0) {
     throw new RangeError('n must be at least zero');
   }
-  return xs => () => function * () {
-    for (let i = 0; i < n; i++) {
-      yield * xs()();
+  return xs => ({
+    [Symbol.iterator]: function * () {
+      for (let i = 0; i < n; i++) {
+        yield * xs;
+      }
     }
-  };
+  });
 };

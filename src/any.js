@@ -3,7 +3,7 @@ export const any = (f = x => true) => {
     throw new TypeError('f must be a function');
   }
   return xs => {
-    for (const x of xs()()) {
+    for (const x of xs) {
       if (f(x)) {
         return true;
       }

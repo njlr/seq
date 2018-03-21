@@ -5,13 +5,15 @@ export const skip = n => {
   if (n < 0) {
     throw new RangeError('n must be at least zero');
   }
-  return xs => () => function * () {
-    let i = 0;
-    for (const x of xs()()) {
-      if (i >= n) {
-        yield x;
+  return xs => ({
+    [Symbol.iterator]: function * () {
+      let i = 0;
+      for (const x of xs) {
+        if (i >= n) {
+          yield x;
+        }
+        i++;
       }
-      i++;
     }
-  };
+  });
 };

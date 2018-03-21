@@ -1,6 +1,6 @@
-export const append = x => xs => () => function * () {
-  for (const x of xs()()) {
+export const append = x => xs => ({
+  [Symbol.iterator]: function * () {
+    yield * xs;
     yield x;
   }
-  yield x;
-};
+});

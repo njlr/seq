@@ -1,7 +1,7 @@
 export const last = xs => {
   let hasFoundValue = false;
   let y = null;
-  for (const x of xs()()) {
+  for (const x of xs) {
     hasFoundValue = true;
     y = x;
   }

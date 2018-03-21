@@ -3,12 +3,14 @@ export const once = xs => {
     throw new TypeError('xs must be defined');
   }
   let hasBeenCalled = false;
-  return () => function * () {
-    if (hasBeenCalled) {
-      throw new Error('once(xs) may only be iterated once. ');
-    } else {
-      hasBeenCalled = true;
+  return {
+    [Symbol.iterator]: function * () {
+      if (hasBeenCalled) {
+        throw new Error('once(xs) may only be iterated once. ');
+      } else {
+        hasBeenCalled = true;
+      }
+      yield * xs;
     }
-    yield * xs()();
   };
 };
