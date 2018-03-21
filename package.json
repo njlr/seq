@@ -1,13 +1,14 @@
 {
   "name": "@njlr/seq",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "entry": "./src/index.js",
   "main": "./lib/index.js",
   "repository": "git@github.com:njlr/seq.git",
   "author": "njlr <njlr@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c ",
+    "build": "rollup -c",
+    "docs": "rm -rf docs && esdoc",
     "test": "jest",
     "prepublishOnly": "yarn test && yarn build"
   },
@@ -18,6 +19,10 @@
     "@babel/preset-env": "^7.0.0-beta.40",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^22.4.0",
+    "esdoc": "^1.0.4",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-importpath-plugin": "^1.0.1",
+    "esdoc-standard-plugin": "^1.0.0",
     "jest": "^22.4.0",
     "regenerator-runtime": "^0.11.1",
     "rollup": "^0.56.2",

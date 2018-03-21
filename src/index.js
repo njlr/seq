@@ -1,3 +1,5 @@
+/** @module seq */
+
 export { all } from './all.js';
 export { any } from './any.js';
 export { append } from './append.js';

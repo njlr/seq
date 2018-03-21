@@ -7,7 +7,7 @@ export const sorted = (c = defaultComparison) => {
   }
   return xs => ({
     [Symbol.iterator]: function * () {
-      const ys = xs |> toArray;
+      const ys = [ ...xs ];
       ys.sort(c);
       yield * ys;
     }

@@ -1,5 +1,7 @@
 /node_modules/
 /lib/
+/out/
+/docs/
 /npm-error.log
 /yarn-error.log
 
