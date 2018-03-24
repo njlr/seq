@@ -4,9 +4,22 @@ A simple library for manipulating generators and arrays in JavaScript.
 
 [![Travis](https://img.shields.io/travis/njlr/seq.svg)](https://travis-ci.org/njlr/seq) 
 
-```
+## Get Started
+
+Install using [Yarn](https://yarnpkg.com/): 
+
+```bash=
 yarn add @njlr/seq
 ```
+
+Install using [NPM](https://www.npmjs.com/): 
+
+
+```bash=
+npm install --save @njlr/seq
+```
+
+You can [browse the documentation on GitHub](https://njlr.github.io/seq/).
 
 
 ## Why? 🤔
