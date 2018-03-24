@@ -1,5 +1,13 @@
 import { defaultEquality } from './default-equality.js';
 
+/** 
+ * Takes an iterable and returns a new one with duplicate elements removed.  
+ * The order of the iterable is maintained. 
+ * This function is curried. 
+ * @param {Object=} e The equality system to use.
+ * @param {Object} xs The iterable.
+ * @returns {Object}
+ */
 export const unique = (e = defaultEquality) => {
   const { hashCode, isEqual } = e;
   return xs => ({

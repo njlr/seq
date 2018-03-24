@@ -1,3 +1,11 @@
+/** 
+ * Splits an iterable into chunks of a given size. 
+ * The last chunk may be less than the specified size. 
+ * This function is curried. 
+ * @param {Number} n The chunk size.
+ * @param {Object} xs The iterable.
+ * @returns {Object}
+ */
 export const chunk = n => {
   if (typeof n !== 'number') {
     throw new TypeError('n must be a number');

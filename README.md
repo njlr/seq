@@ -70,6 +70,12 @@ To build the library:
 yarn build
 ```
 
+To build the documentation: 
+
+```bash=
+yarn docs
+```
+
 To release a new version:
 
 ```bash=

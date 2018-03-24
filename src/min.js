@@ -1,5 +1,12 @@
 import { defaultComparison } from './default-comparison.js';
 
+/** 
+ * Takes an iterable and returns the smallest element, according to the given comparison. 
+ * This function is curried. 
+ * @param {Object=} c The comparison.
+ * @param {Object} xs The iterable.
+ * @returns {Object}
+ */
 export const min = (c = defaultComparison) => {
   if (!c) {
     throw new TypeError('c must be defined');

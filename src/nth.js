@@ -1,3 +1,11 @@
+/** 
+ * Returns the nth element of an iterable.    
+ * This function will throw an error if the iterable is not long enough.  
+ * This function is curried. 
+ * @param {Number} n The zero-based index of the element to return.
+ * @param {Object} xs The iterable.
+ * @returns {Object}
+ */
 export const nth = n => {
   if (!Number.isSafeInteger(n)) {
     throw new TypeError('n must be an integer');
