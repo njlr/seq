@@ -1,0 +1,3231 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/all.js",
+    "content": "/** \n * Tests if a function holds true for all elements in an iterable. \n * Always returns true for an empty iterable. \n * This function is curried. \n * @param {Function} f The condition to test for each element.\n * @param {Object} xs The iterable.\n * @returns {boolean}\n */\nexport const all = (f = x => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (!f(x)) {\n        return false;\n      }\n    }\n    return true;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/all.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "all",
+    "memberof": "src/all.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/all.js~all",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{all}",
+    "description": "Tests if a function holds true for all elements in an iterable. \nAlways returns true for an empty iterable. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The condition to test for each element."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/any.js",
+    "content": "/** \n * Tests if a function holds true for any of the elements in an iterable. \n * Always returns false for an empty iterable. \n * This function is curried. \n * @param {Function} f The condition to test for each element.\n * @param {Object} xs The iterable.\n * @returns {boolean}\n */\nexport const any = (f = x => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (f(x)) {\n        return true;\n      }\n    }\n    return false;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/any.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "any",
+    "memberof": "src/any.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/any.js~any",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{any}",
+    "description": "Tests if a function holds true for any of the elements in an iterable. \nAlways returns false for an empty iterable. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The condition to test for each element."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/append.js",
+    "content": "/** \n * Appends an object to the end of an iterable sequence. \n * This function is curried. \n * @param {Object} x The object to append.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const append = x => xs => ({\n  [Symbol.iterator]: function * () {\n    yield * xs;\n    yield x;\n  }\n});\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/append.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "append",
+    "memberof": "src/append.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/append.js~append",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{append}",
+    "description": "Appends an object to the end of an iterable sequence. \nThis function is curried. ",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "The object to append."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/buffer.js",
+    "content": "/** \n * Takes an iterable and returns a new iterable with all of the same elements but with a memory buffer. \n * This can be used to prevent repeated computations. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const buffer = xs => {\n\n  if (!xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n\n  const b = [];\n  const g = xs[Symbol.iterator]();\n\n  const addToBuffer = () => {\n    const next = g.next();\n    if (next.done) {\n      return false;\n    }\n    b.push(next.value);\n    return true;\n  };\n\n  return {\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      while (true) {\n        while (i >= b.length) {\n          const moreToAdd = addToBuffer();\n          if (!moreToAdd) {\n            return;\n          }\n        }\n        yield b[i];\n        i++;\n      }\n    }\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/buffer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "buffer",
+    "memberof": "src/buffer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/buffer.js~buffer",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{buffer}",
+    "description": "Takes an iterable and returns a new iterable with all of the same elements but with a memory buffer. \nThis can be used to prevent repeated computations. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/chunk.js",
+    "content": "/** \n * Splits an iterable into chunks of a given size. \n * The last chunk may be less than the specified size. \n * This function is curried. \n * @param {Number} n The chunk size.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const chunk = n => {\n  if (typeof n !== 'number') {\n    throw new TypeError('n must be a number');\n  }\n  if (n <= 0) {\n    throw new RangeError('n must be greater than zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let ys = [];\n      for (const x of xs) {\n        ys.push(x);\n        if (ys.length == n) {\n          yield ys;\n          ys = [];\n        }\n      }\n      if (ys.length > 0) {\n        yield ys;\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/chunk.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "chunk",
+    "memberof": "src/chunk.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/chunk.js~chunk",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{chunk}",
+    "description": "Splits an iterable into chunks of a given size. \nThe last chunk may be less than the specified size. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The chunk size."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/concat.js",
+    "content": "/** \n * Concatenates two iterables into one.  \n * This function is curried. \n * @param {Object} ys The iterable to yield second.\n * @param {Object} xs The iterable to yield first.\n * @returns {Object}\n */\nexport const concat = ys => xs => ({\n  [Symbol.iterator]: function * () {\n    yield * xs;\n    yield * ys;\n  }\n});\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/concat.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "concat",
+    "memberof": "src/concat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/concat.js~concat",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{concat}",
+    "description": "Concatenates two iterables into one.  \nThis function is curried. ",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ys",
+        "description": "The iterable to yield second."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable to yield first."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/count.js",
+    "content": "/** \n * Counts the number of elements in an iterable. \n * @param {Object} xs The iterable.\n * @returns {number}\n */\nexport const count = xs => {\n  let i = 0;\n  for (const _ of xs) {\n    i++;\n  }\n  return i;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/count.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "count",
+    "memberof": "src/count.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/count.js~count",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{count}",
+    "description": "Counts the number of elements in an iterable. ",
+    "lineNumber": 6,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{number}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/default-comparison.js",
+    "content": "export const defaultComparison = (i, j) => {\n  if (i == j) {\n    return 0;\n  }\n  if (i > j) {\n    return 1;\n  }\n  return -1;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/default-comparison.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "defaultComparison",
+    "memberof": "src/default-comparison.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/default-comparison.js~defaultComparison",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{defaultComparison}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "i",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "j",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/default-equality.js",
+    "content": "export const defaultEquality = {\n  hashCode: _ => 0, \n  isEqual: (x, y) => x == y,\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/default-equality.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "defaultEquality",
+    "memberof": "src/default-equality.js",
+    "static": true,
+    "longname": "src/default-equality.js~defaultEquality",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{defaultEquality}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"hashCode\": *, \"isEqual\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/empty.js",
+    "content": "/** \n * An empty iterable. \n */\nexport const empty = {\n  [Symbol.iterator]: function * () {}\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/empty.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "empty",
+    "memberof": "src/empty.js",
+    "static": true,
+    "longname": "src/empty.js~empty",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{empty}",
+    "description": "An empty iterable. ",
+    "lineNumber": 4,
+    "type": {
+      "types": [
+        "{\"undefined\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/filter.js",
+    "content": "/** \n * Takes an iterable and returns a new one including only elements that satisfy a given predicate.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object} f The predicate.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const filter = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        if (f(x)) {\n          yield x;\n        }\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/filter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "filter",
+    "memberof": "src/filter.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/filter.js~filter",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{filter}",
+    "description": "Takes an iterable and returns a new one including only elements that satisfy a given predicate.  \nThe order of the iterable is maintained. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The predicate."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "src/first.js",
+    "content": "/** \n * Returns the first element of an iterable that satisfies a given predicate.   \n * This function will throw an error if no satisfactory element is found.  \n * This function is curried. \n * @param {Object=} f The predicate, defaults to always true.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const first = (f = _ => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (f(x)) {\n        return x;\n      }\n    }\n    throw new Error('Expected at least one element');\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/first.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "first",
+    "memberof": "src/first.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/first.js~first",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{first}",
+    "description": "Returns the first element of an iterable that satisfies a given predicate.   \nThis function will throw an error if no satisfactory element is found.  \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The predicate, defaults to always true."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/flat-map.js",
+    "content": "/** \n * Takes an iterable and returns a new one where each element is transformed using the given function.  \n * Unlike map, the function is expected to return an iterable for each element. These iterables are concatenated. \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object} f The transformation function that returns an iterable.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const flatMap = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        yield * f(x);\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/flat-map.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "flatMap",
+    "memberof": "src/flat-map.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/flat-map.js~flatMap",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{flatMap}",
+    "description": "Takes an iterable and returns a new one where each element is transformed using the given function.  \nUnlike map, the function is expected to return an iterable for each element. These iterables are concatenated. \nThe order of the iterable is maintained. \nThis function is curried. ",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The transformation function that returns an iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/forever.js",
+    "content": "/** \n * Given an iterable returns a new iterable that repeats it forever. \n * Take care, since the resulting iterable is infinite. \n * @param {Object} xs The iterable to repeat.\n * @returns {Object}\n */\nexport const forever = xs => {\n  if (!xs) {\n    throw new TypeError('xs must be defined');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      while (true) {\n        yield * xs; \n      }\n    }\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/forever.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "forever",
+    "memberof": "src/forever.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/forever.js~forever",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{forever}",
+    "description": "Given an iterable returns a new iterable that repeats it forever. \nTake care, since the resulting iterable is infinite. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable to repeat."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/from-array.js",
+    "content": "/** \n * Given an array, returns an iterable with equivalent elements. \n * You should not mutate the array used to create the iterable. \n * @param {Object} xs The array.\n * @returns {Object}\n */\nexport const fromArray = xs => {\n  if (!Array.isArray(xs)) {\n    throw new TypeError('xs must be an array');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      yield * xs;\n    }\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/from-array.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "fromArray",
+    "memberof": "src/from-array.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/from-array.js~fromArray",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{fromArray}",
+    "description": "Given an array, returns an iterable with equivalent elements. \nYou should not mutate the array used to create the iterable. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/from-generator.js",
+    "content": "/** \n * Given a generator function, returns an iterable with equivalent elements. \n * @param {Object} xs The generator function.\n * @returns {Object}\n */\nexport const fromGenerator = f => {\n  if (!f) {\n    throw new TypeError('f must be a generator function');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      yield * f();\n    }\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/from-generator.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "fromGenerator",
+    "memberof": "src/from-generator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/from-generator.js~fromGenerator",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{fromGenerator}",
+    "description": "Given a generator function, returns an iterable with equivalent elements. ",
+    "lineNumber": 6,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The generator function."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/head.js",
+    "content": "/** \n * Returns the first element of an iterable. \n * If the iterable is empty then an error is thrown. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const head = xs => {\n  for (const x of xs) {\n    return x;\n  }\n  throw new Error('Expected at least one element');\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/head.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "head",
+    "memberof": "src/head.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/head.js~head",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{head}",
+    "description": "Returns the first element of an iterable. \nIf the iterable is empty then an error is thrown. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "src/includes.js",
+    "content": "import { defaultEquality } from './default-equality.js';\n\n/** \n * Tests if a an iterable contains a given element. \n * Also takes an equality object as an optional argument. \n * This function is partially curried. \n * @param {Object} element The element to look for. \n * @param {Object} [equality=defaultEquality] The equality system to use. \n * @param {Object} xs The iterable to search. \n * @returns {boolean}\n */\nexport const includes = (element, equality = defaultEquality) => {\n  const { isEqual } = equality;\n  if (!isEqual) {\n    throw new TypeError('equality must have a isEqual property');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (isEqual(element, x)) {\n        return true;\n      }\n    }\n    return false;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/includes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "includes",
+    "memberof": "src/includes.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/includes.js~includes",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{includes}",
+    "description": "Tests if a an iterable contains a given element. \nAlso takes an equality object as an optional argument. \nThis function is partially curried. ",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "element",
+        "description": "The element to look for."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "defaultEquality",
+        "defaultRaw": "defaultEquality",
+        "name": "equality",
+        "description": "The equality system to use."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable to search."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "/** @module seq */\n\nexport { all } from './all.js';\nexport { any } from './any.js';\nexport { append } from './append.js';\nexport { buffer } from './buffer.js';\nexport { chunk } from './chunk.js';\nexport { concat } from './concat.js';\nexport { count } from './count.js';\nexport { defaultComparison } from './default-comparison.js';\nexport { defaultEquality } from './default-equality.js';\nexport { empty } from './empty.js';\nexport { filter } from './filter.js';\nexport { first } from './first.js';\nexport { flatMap } from './flat-map.js';\nexport { forever } from './forever.js';\nexport { fromArray } from './from-array.js';\nexport { fromGenerator } from './from-generator.js';\nexport { head } from './head.js';\nexport { includes } from './includes.js';\nexport { indexed } from './indexed.js';\nexport { sum } from './sum.js';\nexport { tail } from './tail.js';\nexport { take } from './take.js';\nexport { takeWhile } from './take-while.js';\nexport { join } from './join.js';\nexport { just } from './just.js';\nexport { last } from './last.js';\nexport { map } from './map.js';\nexport { max } from './max.js';\nexport { min } from './min.js';\nexport { none } from './none.js';\nexport { nth } from './nth.js';\nexport { once } from './once.js';\nexport { prepend } from './prepend.js';\nexport { range } from './range.js';\nexport { reduce } from './reduce.js';\nexport { repeat } from './repeat.js';\nexport { reverse } from './reverse.js';\nexport { single } from './single.js';\nexport { skipUntil } from './skip-until.js';\nexport { skip } from './skip.js';\nexport { sorted } from './sorted.js';\nexport { sortedBy } from './sorted-by.js';\nexport { strictEquality } from './strict-equality.js';\nexport { toArray } from './to-array.js';\nexport { unique } from './unique.js';\nexport { zip } from './zip.js';\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "file",
+    "name": "src/indexed.js",
+    "content": "import { range } from './range.js';\nimport { zip } from './zip.js';\n\nexport const indexed = xs => zip(xs)(range());\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/indexed.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 86,
+    "kind": "function",
+    "name": "indexed",
+    "memberof": "src/indexed.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/indexed.js~indexed",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{indexed}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "xs",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/join.js",
+    "content": "/** \n * Joins all elements in an iterable using the given seperator. \n * If the iterable is empty then the empty string is returned. \n * @param {String=} s The seperator string. \n * @param {Object} xs The iterable to join. \n * @returns {String}\n */\nexport const join = (s = '') => xs => {\n  if (!xs || !xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n  let result = '';\n  let isFirst = true;\n  for (const x of xs) {\n    if (isFirst) {\n      result = x;\n      isFirst = false;\n    } else {\n      result = result + s + x;\n    }\n  }\n  return result;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/join.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "join",
+    "memberof": "src/join.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/join.js~join",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{join}",
+    "description": "Joins all elements in an iterable using the given seperator. \nIf the iterable is empty then the empty string is returned. ",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{String}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "s",
+        "description": "The seperator string."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable to join."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/just.js",
+    "content": "/** \n * Constructs an iterable from a fixed list of elements. \n * This function is variadic. \n * @param {...Object} elements The elements of the iterable. \n * @returns {Object}\n */\nexport const just = function() {\n  const xs = [ ...arguments ];\n  return ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        yield x;\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/just.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "just",
+    "memberof": "src/just.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/just.js~just",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{just}",
+    "description": "Constructs an iterable from a fixed list of elements. \nThis function is variadic. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...Object"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "elements",
+        "description": "The elements of the iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "file",
+    "name": "src/last.js",
+    "content": "/** \n * Returns the last element of an iterable that satisfies a given predicate.   \n * This function will throw an error if no satisfactory element is found.  \n * This function is curried. \n * @param {Object=} f The predicate, defaults to always true.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const last = (f = _ => true) => xs => {\n  let hasFoundValue = false;\n  let y = null;\n  for (const x of xs) {\n    if (f(x)) {\n      hasFoundValue = true;\n      y = x;\n    }\n  }\n  if (hasFoundValue) {\n    return y;\n  }\n  throw new Error('Expected at least one element');\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/last.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "last",
+    "memberof": "src/last.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/last.js~last",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{last}",
+    "description": "Returns the last element of an iterable that satisfies a given predicate.   \nThis function will throw an error if no satisfactory element is found.  \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The predicate, defaults to always true."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "src/map.js",
+    "content": "/** \n * Takes an iterable and returns a new one where each element is transformed using the given function.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object} f The transformation function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const map = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        yield f(x);\n      };\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/map.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "map",
+    "memberof": "src/map.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/map.js~map",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{map}",
+    "description": "Takes an iterable and returns a new one where each element is transformed using the given function.  \nThe order of the iterable is maintained. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The transformation function."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/max.js",
+    "content": "import { defaultComparison } from './default-comparison.js';\nimport { min } from './min.js';\n\n/** \n * Takes an iterable and returns the largest element, according to the given comparison. \n * This function is curried. \n * @param {Object=} c The comparison.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const max = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return min((i, j) => c(j, i));\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/max.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "function",
+    "name": "max",
+    "memberof": "src/max.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/max.js~max",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{max}",
+    "description": "Takes an iterable and returns the largest element, according to the given comparison. \nThis function is curried. ",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "c",
+        "description": "The comparison."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/min.js",
+    "content": "import { defaultComparison } from './default-comparison.js';\n\n/** \n * Takes an iterable and returns the smallest element, according to the given comparison. \n * This function is curried. \n * @param {Object=} c The comparison.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const min = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return xs => {\n    if (!xs) {\n      throw new TypeError('xs must be define');\n    }\n    let min = null;\n    let foundMin = false;\n    for (const x of xs) {\n      if (foundMin) {\n        if (c(x, min) < 0) {\n          min = x;\n        }\n      } else {\n        foundMin = true;\n        min = x;\n      }\n    }\n    if (foundMin) {\n      return min;\n    }\n    throw new Error('Expected at least one element but found none');\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/min.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "min",
+    "memberof": "src/min.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/min.js~min",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{min}",
+    "description": "Takes an iterable and returns the smallest element, according to the given comparison. \nThis function is curried. ",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "c",
+        "description": "The comparison."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/none.js",
+    "content": "/** \n * Tests if a function holds true for none of the elements in an iterable. \n * Always returns true for an empty iterable. \n * By default, this function returns false for an iterable with any elements. \n * This function is curried. \n * @param {Function=} f The condition to test for each element.\n * @param {Object} xs The iterable.\n * @returns {boolean}\n */\nexport const none = (f = _ => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (f(x)) {\n        return false;\n      }\n    }\n    return true;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/none.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "none",
+    "memberof": "src/none.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/none.js~none",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{none}",
+    "description": "Tests if a function holds true for none of the elements in an iterable. \nAlways returns true for an empty iterable. \nBy default, this function returns false for an iterable with any elements. \nThis function is curried. ",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{boolean}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The condition to test for each element."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/nth.js",
+    "content": "/** \n * Returns the nth element of an iterable.    \n * This function will throw an error if the iterable is not long enough.  \n * This function is curried. \n * @param {Number} n The zero-based index of the element to return.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const nth = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => {\n    let i = 0;\n    for (const x of xs) {\n      if (i === n) {\n        return x;\n      }\n      i++;\n    }\n    throw new Error('Tried to take the ' + n + 'th element, but there were only ' + i);\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/nth.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "nth",
+    "memberof": "src/nth.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/nth.js~nth",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{nth}",
+    "description": "Returns the nth element of an iterable.    \nThis function will throw an error if the iterable is not long enough.  \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The zero-based index of the element to return."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/once.js",
+    "content": "/** \n * Takes an iterable and returns a new iterable that may only be iterated once. \n * This function is useful for debugging purposes. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const once = xs => {\n  if (!xs) {\n    throw new TypeError('xs must be defined');\n  }\n  let hasBeenCalled = false;\n  return {\n    [Symbol.iterator]: function * () {\n      if (hasBeenCalled) {\n        throw new Error('once(xs) may only be iterated once. ');\n      } else {\n        hasBeenCalled = true;\n      }\n      yield * xs;\n    }\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/once.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "function",
+    "name": "once",
+    "memberof": "src/once.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/once.js~once",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{once}",
+    "description": "Takes an iterable and returns a new iterable that may only be iterated once. \nThis function is useful for debugging purposes. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "src/prepend.js",
+    "content": "/** \n * Prepends an object to the start of an iterable sequence. \n * This function is curried. \n * @param {Object} x The object to prepend.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const prepend = x => xs => ({\n  [Symbol.iterator]: function * () {\n    yield x;\n    yield * xs;\n  }\n});\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/prepend.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "function",
+    "name": "prepend",
+    "memberof": "src/prepend.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/prepend.js~prepend",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{prepend}",
+    "description": "Prepends an object to the start of an iterable sequence. \nThis function is curried. ",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "The object to prepend."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "src/range.js",
+    "content": "/** \n * Creates an iterable of numbers from zero to the given limit. \n * @param {Number=} n The number to count to.\n * @returns {Object}\n */\nexport const range = (n = Infinity) => {\n  if (typeof n !== 'number') {\n    throw new TypeError('n must be a number');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      for (let i = 0; i < n; i++) {\n        yield i;\n      }\n    }\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/range.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "function",
+    "name": "range",
+    "memberof": "src/range.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/range.js~range",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{range}",
+    "description": "Creates an iterable of numbers from zero to the given limit. ",
+    "lineNumber": 6,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number to count to."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/reduce.js",
+    "content": "/** \n * Performs a reduction of an iterable, starting from a given state and reducer function. \n * Note that this function must not be called on an infinite iterable. \n * This function is partially curried. \n * @param {Object} s The initial state. \n * @param {Object} f The reducer function. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const reduce = (s, f) => (xs) => {\n  let w = s;\n  for (const x of xs) {\n    w = f(w, x);\n  }\n  return w;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/reduce.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "function",
+    "name": "reduce",
+    "memberof": "src/reduce.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce.js~reduce",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{reduce}",
+    "description": "Performs a reduction of an iterable, starting from a given state and reducer function. \nNote that this function must not be called on an infinite iterable. \nThis function is partially curried. ",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "s",
+        "description": "The initial state."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The reducer function."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 111,
+    "kind": "file",
+    "name": "src/repeat.js",
+    "content": "/** \n * Repeats an iterable for the given number of times. \n * This function is curried. \n * @param {Number} n The number of repetitions. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const repeat = n => {\n  if (Number.isNaN(n) || !Number.isSafeInteger(n)) {\n    throw new TypeError('n must be a number');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (let i = 0; i < n; i++) {\n        yield * xs;\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/repeat.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "repeat",
+    "memberof": "src/repeat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/repeat.js~repeat",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{repeat}",
+    "description": "Repeats an iterable for the given number of times. \nThis function is curried. ",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of repetitions."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/reverse.js",
+    "content": "/** \n * Given an iterable, returns a new iterable with the elements reversed. \n * Note that this function must not be called on an infinite iterable. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const reverse = xs => ({\n  [Symbol.iterator]: function * () {\n    const ys = [ ...xs ];\n    ys.reverse();\n    yield * ys;\n  }\n});\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/reverse.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "function",
+    "name": "reverse",
+    "memberof": "src/reverse.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reverse.js~reverse",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{reverse}",
+    "description": "Given an iterable, returns a new iterable with the elements reversed. \nNote that this function must not be called on an infinite iterable. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 115,
+    "kind": "file",
+    "name": "src/single.js",
+    "content": "/** \n * Returns the first element of an iterable that satisfies a given predicate.   \n * This function will throw an error if no satisfactory element is found.  \n * This function is curried. \n * @param {Object=} f The predicate, defaults to always true.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const single = (f = _ => true) => xs => {\n  let hasFoundValue = false;\n  let y = null;\n  for (const x of xs) {\n    if (f(x)) {\n      if (hasFoundValue) {\n        throw new Error('Expected exactly one element but found at least two');\n      }\n      hasFoundValue = true;\n      y = x;\n    }\n  }\n  if (hasFoundValue) {  \n    return y;\n  }\n  throw new Error('Expected exactly one element but found none');\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/single.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "single",
+    "memberof": "src/single.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/single.js~single",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{single}",
+    "description": "Returns the first element of an iterable that satisfies a given predicate.   \nThis function will throw an error if no satisfactory element is found.  \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The predicate, defaults to always true."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/skip-until.js",
+    "content": "/** \n * Skips elements from an iterable for as long as the elements satisfy a given condition. \n * The first element that satisfies the condition will be included. \n * This function is curried. \n * @param {Object} f The function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const skipUntil = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let shouldYield = false;\n      for (const x of xs) {\n        if (shouldYield) {\n          yield x;\n        } else {\n          if (f(x)) {\n            yield x;\n            shouldYield = true;\n          }\n        }\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/skip-until.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "skipUntil",
+    "memberof": "src/skip-until.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/skip-until.js~skipUntil",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{skipUntil}",
+    "description": "Skips elements from an iterable for as long as the elements satisfy a given condition. \nThe first element that satisfies the condition will be included. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The function."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "file",
+    "name": "src/skip.js",
+    "content": "/** \n * Skips the first n elements of an iterable. \n * If there are fewer than n elements in an iterable, then an empty iterable will be returned. \n * This function is curried. \n * @param {Number} n The number of elements to skip.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const skip = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      for (const x of xs) {\n        if (i >= n) {\n          yield x;\n        }\n        i++;\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/skip.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 120,
+    "kind": "function",
+    "name": "skip",
+    "memberof": "src/skip.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/skip.js~skip",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{skip}",
+    "description": "Skips the first n elements of an iterable. \nIf there are fewer than n elements in an iterable, then an empty iterable will be returned. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements to skip."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "file",
+    "name": "src/sorted-by.js",
+    "content": "import { defaultComparison } from './default-comparison.js';\nimport { map } from './map.js';\nimport { toArray } from './to-array.js';\n\nexport const sortedBy = (f, c = defaultComparison) => {\n  if (!f) {\n    throw new TypeError('f must be defined');\n  }\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  const comparison = (i, j) => c(i.score, j.score);\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...map(x => ({ score: f(x), value: x }))(xs) ];\n      ys.sort(comparison);\n      yield * map(x => x.value)(ys);\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/sorted-by.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "function",
+    "name": "sortedBy",
+    "memberof": "src/sorted-by.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/sorted-by.js~sortedBy",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{sortedBy}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "f",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "c",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "defaultComparison",
+        "defaultValue": "defaultComparison"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 123,
+    "kind": "file",
+    "name": "src/sorted.js",
+    "content": "import { defaultComparison } from './default-comparison.js';\nimport { toArray } from './to-array.js';\n\n/** \n * Given an iterable, returns a new iterable with the elements sorted. \n * Note that this function must not be called on an infinite iterable. \n * @param {Object=} c The comparison function to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const sorted = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...xs ];\n      ys.sort(c);\n      yield * ys;\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/sorted.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 124,
+    "kind": "function",
+    "name": "sorted",
+    "memberof": "src/sorted.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/sorted.js~sorted",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{sorted}",
+    "description": "Given an iterable, returns a new iterable with the elements sorted. \nNote that this function must not be called on an infinite iterable. ",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "c",
+        "description": "The comparison function to use."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "file",
+    "name": "src/strict-equality.js",
+    "content": "export const strictEquality = {\n  hashCode: _ => 0, \n  isEqual: (x, y) => x === y,\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/strict-equality.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "strictEquality",
+    "memberof": "src/strict-equality.js",
+    "static": true,
+    "longname": "src/strict-equality.js~strictEquality",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{strictEquality}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"hashCode\": *, \"isEqual\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "file",
+    "name": "src/sum.js",
+    "content": "/** \n * Sums all elements in an iterable. \n * If the iterable is empty then zero is returned. \n * @param {Object} xs The iterable.\n * @returns {Number}\n */\nexport const sum = xs => {\n  if (!xs || !xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n  let result = 0;\n  for (const x of xs) {\n    result = result + x;\n  }\n  return result;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/sum.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 128,
+    "kind": "function",
+    "name": "sum",
+    "memberof": "src/sum.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/sum.js~sum",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{sum}",
+    "description": "Sums all elements in an iterable. \nIf the iterable is empty then zero is returned. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "file",
+    "name": "src/tail.js",
+    "content": "/** \n * Returns an iterable of all elements except the first. \n * If the iterable is empty then an error is thrown. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const tail = xs => ({\n  [Symbol.iterator]: function * () {\n    let isFirst = true;\n    for (const x of xs) {\n      if (isFirst) {\n        isFirst = false;\n      } else {\n        yield x;\n      }\n    }\n    if (isFirst) {\n      throw new Error('Expected at least one element');\n    }\n  }\n});\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/tail.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 130,
+    "kind": "function",
+    "name": "tail",
+    "memberof": "src/tail.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/tail.js~tail",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{tail}",
+    "description": "Returns an iterable of all elements except the first. \nIf the iterable is empty then an error is thrown. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 131,
+    "kind": "file",
+    "name": "src/take-while.js",
+    "content": "/** \n * Takes elements from an iterable for as long as the elements satisfy a given condition. \n * The first element that does satisfies the condition will not be included. \n * This function is curried. \n * @param {Object} f The function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const takeWhile = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        if (!f(x)) {\n          return;\n        }\n        yield x;\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/take-while.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 132,
+    "kind": "function",
+    "name": "takeWhile",
+    "memberof": "src/take-while.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/take-while.js~takeWhile",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{takeWhile}",
+    "description": "Takes elements from an iterable for as long as the elements satisfy a given condition. \nThe first element that does satisfies the condition will not be included. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": "The function."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "file",
+    "name": "src/take.js",
+    "content": "/** \n * Takes the first n elements of an iterable. \n * If there are fewer than n elements in an iterable, then this has no effect. \n * This function is curried. \n * @param {Number} n The number of elements to take.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const take = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      for (const x of xs) {\n        if (i >= n) {\n          return;\n        }\n        yield x;\n        i++;\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/take.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 134,
+    "kind": "function",
+    "name": "take",
+    "memberof": "src/take.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/take.js~take",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{take}",
+    "description": "Takes the first n elements of an iterable. \nIf there are fewer than n elements in an iterable, then this has no effect. \nThis function is curried. ",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements to take."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "file",
+    "name": "src/to-array.js",
+    "content": "/** \n * Takes an iterable and converts it into an array. \n * This shuld only be called on finite iterables. \n * @param {Object} xs The iterable.\n * @returns {Array}\n */\nexport const toArray = xs => {\n  if (Array.isArray(xs)) {\n    return xs;\n  }\n  const result = [];\n  for (const x of xs) {\n    result.push(x);\n  }\n  return result;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/to-array.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 136,
+    "kind": "function",
+    "name": "toArray",
+    "memberof": "src/to-array.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/to-array.js~toArray",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{toArray}",
+    "description": "Takes an iterable and converts it into an array. \nThis shuld only be called on finite iterables. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 137,
+    "kind": "file",
+    "name": "src/unique.js",
+    "content": "import { defaultEquality } from './default-equality.js';\n\n/** \n * Takes an iterable and returns a new one with duplicate elements removed.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object=} e The equality system to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const unique = (e = defaultEquality) => {\n  const { hashCode, isEqual } = e;\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const buckets = new Map();\n      for (const x of xs) {\n        const h = hashCode(x);\n        const bucket = buckets.get(h);\n        if (bucket) {\n          let foundExactMatch = false;\n          for (const y of bucket) {\n            if (isEqual(x, y)) {\n              foundExactMatch = true;\n              break;\n            }\n          }\n          if (!foundExactMatch) {\n            yield x;\n            bucket.push(x);\n          }\n        } else {\n          yield x;\n          buckets.set(h, [ x ]);\n        }\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/unique.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 138,
+    "kind": "function",
+    "name": "unique",
+    "memberof": "src/unique.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/unique.js~unique",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{unique}",
+    "description": "Takes an iterable and returns a new one with duplicate elements removed.  \nThe order of the iterable is maintained. \nThis function is curried. ",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object="
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "e",
+        "description": "The equality system to use."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 139,
+    "kind": "file",
+    "name": "src/zip.js",
+    "content": "/** \n * Combines two iterables into one by pairing elements. \n * Each pair is a two element array. \n * The longer of the two iterables will be truncated to match the length of the shorter one.  \n * This function is curried. \n * @param {Object} ys The iterable whose elements will be the second element of the pairs.\n * @param {Object} xs The iterable whose elements will be the first element of the pairs.\n * @returns {Object}\n */\nexport const zip = ys => {\n  if (!ys[Symbol.iterator]) {\n    throw new TypeError('ys must be iterable');\n  }\n  return xs => {\n    if (!xs[Symbol.iterator]) {\n      throw new TypeError('xs must be iterable');\n    }\n    return {\n      [Symbol.iterator]: function * () {\n        const xsGenerator = xs[Symbol.iterator]();\n        const ysGenerator = ys[Symbol.iterator]();\n        while (true) {\n          const x = xsGenerator.next();\n          const y = ysGenerator.next();\n          if (x.done || y.done) {\n            break;\n          }\n          yield [ x.value, y.value ];\n        }\n      }\n    };\n  };\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/js/seq/src/zip.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 140,
+    "kind": "function",
+    "name": "zip",
+    "memberof": "src/zip.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/zip.js~zip",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq/",
+    "importStyle": "{zip}",
+    "description": "Combines two iterables into one by pairing elements. \nEach pair is a two element array. \nThe longer of the two iterables will be truncated to match the length of the shorter one.  \nThis function is curried. ",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ys",
+        "description": "The iterable whose elements will be the second element of the pairs."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable whose elements will be the first element of the pairs."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# seq\n\nA simple library for manipulating generators and arrays in JavaScript. \n\n[![Travis](https://img.shields.io/travis/njlr/seq.svg)](https://travis-ci.org/njlr/seq) \n\n```\nyarn add @njlr/seq\n```\n\n\n## Why? 🤔\n\n * Some of the built-in Array functions are mutating (e.g. `Array.prototype.sort`). \n * Many array functions are missing. Where is `Array.prototype.flatMap`?\n * A chain of array functions creates a new array at every stage: the operations are not lazy. \n * [lodash](https://lodash.com/) and [friends](https://github.com/jussi-kalliokoski/trine) require either a wrapper object or binding for chaining calls. We use the [pipeline operator](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-pipeline-operator) (`|>`) to achieve this at compile-time! \n * This package is a good citizen. It has no dependencies and does not mutate any global objects. \n\n\n## Demo\n\n```javascript=\nimport * as seq from '@njlr/seq';\n\nconst x = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] \n  |> seq.unique()\n  |> seq.map(x => x * 2)\n  |> seq.filter(x => x > 4)\n  |> seq.sorted()\n  |> seq.toArray;\n\n// x is [ 6, 8, 10, 14 ]\n```\n\nSince seq works on iterables, you can also use `for...of` loops:\n\n```javascript=\nimport * as seq from '@njlr/seq';\n\nfor (const x of seq.range(10) |> seq.map(x => x * x)) {\n  console.log(x);\n}\n```\n\nThis library also plays nicely with spread syntax! \n\n```javascript=\nconst squares = [ ... seq.range(10) |> seq.map(x => x * x) ];\n```\n\n\n## Development\n\nDependencies are managed by Yarn: \n\n```bash=\nyarn install --pure-lockfile\n```\n\nTo run all tests:\n\n```bash=\nyarn test\n```\n\nTo build the library:\n\n```bash=\nyarn build\n```\n\nTo build the documentation: \n\n```bash=\nyarn docs\n```\n\nTo release a new version:\n\n```bash=\nnpm publish --access public \n```\n",
+    "longname": "/home/nick-la-rooy/Documents/js/seq/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@njlr/seq\",\n  \"version\": \"3.0.0\",\n  \"entry\": \"./src/index.js\",\n  \"main\": \"./lib/index.js\",\n  \"repository\": \"git@github.com:njlr/seq.git\",\n  \"author\": \"njlr <njlr@users.noreply.github.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"rollup -c\",\n    \"docs\": \"rm -rf docs && esdoc\",\n    \"test\": \"jest\",\n    \"prepublishOnly\": \"yarn test && yarn build\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.0.0-beta.40\",\n    \"@babel/node\": \"^7.0.0-beta.40\",\n    \"@babel/plugin-proposal-pipeline-operator\": \"^7.0.0-beta.40\",\n    \"@babel/preset-env\": \"^7.0.0-beta.40\",\n    \"babel-core\": \"^7.0.0-0\",\n    \"babel-jest\": \"^22.4.0\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^22.4.0\",\n    \"regenerator-runtime\": \"^0.11.1\",\n    \"rollup\": \"^0.56.2\",\n    \"rollup-plugin-babel\": \"^4.0.0-beta.0\"\n  }\n}\n",
+    "longname": "/home/nick-la-rooy/Documents/js/seq/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
