@@ -12,6 +12,9 @@
     "test": "jest",
     "prepublishOnly": "yarn test && yarn build"
   },
+  "jest": {
+    "testURL": "http://localhost"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "@babel/node": "^7.0.0-beta.40",

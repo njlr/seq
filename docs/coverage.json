@@ -1,7 +1,7 @@
 {
-  "coverage": "89.13%",
-  "expectCount": 46,
-  "actualCount": 41,
+  "coverage": "88.46%",
+  "expectCount": 52,
+  "actualCount": 46,
   "files": {
     "src/all.js": {
       "expectCount": 1,
@@ -104,6 +104,11 @@
         4
       ]
     },
+    "src/is-iterable.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "src/join.js": {
       "expectCount": 1,
       "actualCount": 1,
@@ -164,12 +169,22 @@
       "actualCount": 1,
       "undocumentLines": []
     },
+    "src/remove.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "src/repeat.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
     },
     "src/reverse.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/set.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
@@ -188,6 +203,13 @@
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
+    },
+    "src/smoosh.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        3
+      ]
     },
     "src/sorted-by.js": {
       "expectCount": 1,
@@ -234,6 +256,11 @@
       "undocumentLines": []
     },
     "src/unique.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/update.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

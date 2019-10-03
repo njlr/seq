@@ -10,7 +10,12 @@
     ]
   ],
   "plugins": [
-    "@babel/plugin-proposal-pipeline-operator"
+    [
+      "@babel/plugin-proposal-pipeline-operator",
+      {
+        "proposal": "minimal"
+      }
+    ]
   ],
   "env": {
     "test": {
@@ -24,7 +29,12 @@
         ]
       ],
       "plugins": [
-        "@babel/plugin-proposal-pipeline-operator"
+        [
+          "@babel/plugin-proposal-pipeline-operator",
+          {
+            "proposal": "minimal"
+          }
+        ]
       ]
     }
   }

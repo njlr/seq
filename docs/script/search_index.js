@@ -1,278 +1,308 @@
 window.esdocSearchIndex = [
   [
-    "@njlr/seq/~all",
+    "@njlr/seq~all",
     "function/index.html#static-function-all",
-    "<span>all</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>all</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~any",
+    "@njlr/seq~any",
     "function/index.html#static-function-any",
-    "<span>any</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>any</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~append",
+    "@njlr/seq~append",
     "function/index.html#static-function-append",
-    "<span>append</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>append</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~buffer",
+    "@njlr/seq~buffer",
     "function/index.html#static-function-buffer",
-    "<span>buffer</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>buffer</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~chunk",
+    "@njlr/seq~chunk",
     "function/index.html#static-function-chunk",
-    "<span>chunk</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>chunk</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~concat",
+    "@njlr/seq~concat",
     "function/index.html#static-function-concat",
-    "<span>concat</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>concat</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~count",
+    "@njlr/seq~count",
     "function/index.html#static-function-count",
-    "<span>count</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>count</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~defaultcomparison",
+    "@njlr/seq~defaultcomparison",
     "function/index.html#static-function-defaultComparison",
-    "<span>defaultComparison</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>defaultComparison</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~defaultequality",
+    "@njlr/seq~defaultequality",
     "variable/index.html#static-variable-defaultEquality",
-    "<span>defaultEquality</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>defaultEquality</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "variable"
   ],
   [
-    "@njlr/seq/~empty",
+    "@njlr/seq~empty",
     "variable/index.html#static-variable-empty",
-    "<span>empty</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>empty</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "variable"
   ],
   [
-    "@njlr/seq/~filter",
+    "@njlr/seq~filter",
     "function/index.html#static-function-filter",
-    "<span>filter</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>filter</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~first",
+    "@njlr/seq~first",
     "function/index.html#static-function-first",
-    "<span>first</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>first</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~flatmap",
+    "@njlr/seq~flatmap",
     "function/index.html#static-function-flatMap",
-    "<span>flatMap</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>flatMap</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~forever",
+    "@njlr/seq~forever",
     "function/index.html#static-function-forever",
-    "<span>forever</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>forever</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~fromarray",
+    "@njlr/seq~fromarray",
     "function/index.html#static-function-fromArray",
-    "<span>fromArray</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>fromArray</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~fromgenerator",
+    "@njlr/seq~fromgenerator",
     "function/index.html#static-function-fromGenerator",
-    "<span>fromGenerator</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>fromGenerator</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~head",
+    "@njlr/seq~head",
     "function/index.html#static-function-head",
-    "<span>head</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>head</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~includes",
+    "@njlr/seq~includes",
     "function/index.html#static-function-includes",
-    "<span>includes</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>includes</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~indexed",
+    "@njlr/seq~indexed",
     "function/index.html#static-function-indexed",
-    "<span>indexed</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>indexed</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~join",
+    "@njlr/seq~isiterable",
+    "function/index.html#static-function-isIterable",
+    "<span>isIterable</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~join",
     "function/index.html#static-function-join",
-    "<span>join</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>join</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~just",
+    "@njlr/seq~just",
     "function/index.html#static-function-just",
-    "<span>just</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>just</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~last",
+    "@njlr/seq~last",
     "function/index.html#static-function-last",
-    "<span>last</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>last</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~map",
+    "@njlr/seq~map",
     "function/index.html#static-function-map",
-    "<span>map</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>map</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~max",
+    "@njlr/seq~max",
     "function/index.html#static-function-max",
-    "<span>max</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>max</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~min",
+    "@njlr/seq~min",
     "function/index.html#static-function-min",
-    "<span>min</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>min</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~none",
+    "@njlr/seq~none",
     "function/index.html#static-function-none",
-    "<span>none</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>none</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~nth",
+    "@njlr/seq~nth",
     "function/index.html#static-function-nth",
-    "<span>nth</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>nth</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~once",
+    "@njlr/seq~once",
     "function/index.html#static-function-once",
-    "<span>once</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>once</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~prepend",
+    "@njlr/seq~prepend",
     "function/index.html#static-function-prepend",
-    "<span>prepend</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>prepend</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~range",
+    "@njlr/seq~range",
     "function/index.html#static-function-range",
-    "<span>range</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>range</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~reduce",
+    "@njlr/seq~reduce",
     "function/index.html#static-function-reduce",
-    "<span>reduce</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>reduce</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~repeat",
+    "@njlr/seq~remove",
+    "function/index.html#static-function-remove",
+    "<span>remove</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~repeat",
     "function/index.html#static-function-repeat",
-    "<span>repeat</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>repeat</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~reverse",
+    "@njlr/seq~reverse",
     "function/index.html#static-function-reverse",
-    "<span>reverse</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>reverse</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~single",
+    "@njlr/seq~set",
+    "function/index.html#static-function-set",
+    "<span>set</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~single",
     "function/index.html#static-function-single",
-    "<span>single</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>single</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~skip",
+    "@njlr/seq~skip",
     "function/index.html#static-function-skip",
-    "<span>skip</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>skip</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~skipuntil",
+    "@njlr/seq~skipuntil",
     "function/index.html#static-function-skipUntil",
-    "<span>skipUntil</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>skipUntil</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~sorted",
+    "@njlr/seq~smoosh",
+    "function/index.html#static-function-smoosh",
+    "<span>smoosh</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~sorted",
     "function/index.html#static-function-sorted",
-    "<span>sorted</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>sorted</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~sortedby",
+    "@njlr/seq~sortedby",
     "function/index.html#static-function-sortedBy",
-    "<span>sortedBy</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>sortedBy</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~strictequality",
+    "@njlr/seq~strictequality",
     "variable/index.html#static-variable-strictEquality",
-    "<span>strictEquality</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>strictEquality</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "variable"
   ],
   [
-    "@njlr/seq/~sum",
+    "@njlr/seq~sum",
     "function/index.html#static-function-sum",
-    "<span>sum</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>sum</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~tail",
+    "@njlr/seq~tail",
     "function/index.html#static-function-tail",
-    "<span>tail</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>tail</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~take",
+    "@njlr/seq~take",
     "function/index.html#static-function-take",
-    "<span>take</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>take</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~takewhile",
+    "@njlr/seq~takewhile",
     "function/index.html#static-function-takeWhile",
-    "<span>takeWhile</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>takeWhile</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~toarray",
+    "@njlr/seq~toarray",
     "function/index.html#static-function-toArray",
-    "<span>toArray</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>toArray</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~unique",
+    "@njlr/seq~unique",
     "function/index.html#static-function-unique",
-    "<span>unique</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>unique</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
-    "@njlr/seq/~zip",
+    "@njlr/seq~update",
+    "function/index.html#static-function-update",
+    "<span>update</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~zip",
     "function/index.html#static-function-zip",
-    "<span>zip</span> <span class=\"search-result-import-path\">@njlr/seq/</span>",
+    "<span>zip</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
@@ -678,6 +708,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/is-iterable.js",
+    "file/src/is-iterable.js.html",
+    "src/is-iterable.js",
+    "file"
+  ],
+  [
     "src/join.js",
     "file/src/join.js.html",
     "src/join.js",
@@ -750,6 +786,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/remove.js",
+    "file/src/remove.js.html",
+    "src/remove.js",
+    "file"
+  ],
+  [
     "src/repeat.js",
     "file/src/repeat.js.html",
     "src/repeat.js",
@@ -759,6 +801,12 @@ window.esdocSearchIndex = [
     "src/reverse.js",
     "file/src/reverse.js.html",
     "src/reverse.js",
+    "file"
+  ],
+  [
+    "src/set.js",
+    "file/src/set.js.html",
+    "src/set.js",
     "file"
   ],
   [
@@ -777,6 +825,12 @@ window.esdocSearchIndex = [
     "src/skip.js",
     "file/src/skip.js.html",
     "src/skip.js",
+    "file"
+  ],
+  [
+    "src/smoosh.js",
+    "file/src/smoosh.js.html",
+    "src/smoosh.js",
     "file"
   ],
   [
@@ -831,6 +885,12 @@ window.esdocSearchIndex = [
     "src/unique.js",
     "file/src/unique.js.html",
     "src/unique.js",
+    "file"
+  ],
+  [
+    "src/update.js",
+    "file/src/update.js.html",
+    "src/update.js",
     "file"
   ],
   [
