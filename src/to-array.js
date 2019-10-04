@@ -1,6 +1,6 @@
 /** 
  * Takes an iterable and converts it into an array. 
- * This shuld only be called on finite iterables. 
+ * This should only be called on finite iterables. 
  * @param {Object} xs The iterable.
  * @returns {Array}
  */
