@@ -9,6 +9,7 @@ export { concat } from './concat.js';
 export { count } from './count.js';
 export { defaultComparison } from './default-comparison.js';
 export { defaultEquality } from './default-equality.js';
+export { structuralEquality } from './structural-equality/index.js';
 export { empty } from './empty.js';
 export { filter } from './filter.js';
 export { first } from './first.js';

@@ -96,6 +96,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@njlr/seq~hashcode",
+    "function/index.html#static-function-hashCode",
+    "<span>hashCode</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
     "@njlr/seq~head",
     "function/index.html#static-function-head",
     "<span>head</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
@@ -111,6 +117,12 @@ window.esdocSearchIndex = [
     "@njlr/seq~indexed",
     "function/index.html#static-function-indexed",
     "<span>indexed</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~isequal",
+    "function/index.html#static-function-isEqual",
+    "<span>isEqual</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
@@ -258,6 +270,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "@njlr/seq~structuralequality",
+    "variable/index.html#static-variable-structuralEquality",
+    "<span>structuralEquality</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "variable"
+  ],
+  [
     "@njlr/seq~sum",
     "function/index.html#static-function-sum",
     "<span>sum</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
@@ -285,6 +303,12 @@ window.esdocSearchIndex = [
     "@njlr/seq~toarray",
     "function/index.html#static-function-toArray",
     "<span>toArray</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
+    "@njlr/seq~toset",
+    "function/index.html#static-function-toSet",
+    "<span>toSet</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
@@ -852,6 +876,24 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/structural-equality/hash-code.js",
+    "file/src/structural-equality/hash-code.js.html",
+    "src/structural-equality/hash-code.js",
+    "file"
+  ],
+  [
+    "src/structural-equality/index.js",
+    "file/src/structural-equality/index.js.html",
+    "src/structural-equality/index.js",
+    "file"
+  ],
+  [
+    "src/structural-equality/is-equal.js",
+    "file/src/structural-equality/is-equal.js.html",
+    "src/structural-equality/is-equal.js",
+    "file"
+  ],
+  [
     "src/sum.js",
     "file/src/sum.js.html",
     "src/sum.js",
@@ -879,6 +921,12 @@ window.esdocSearchIndex = [
     "src/to-array.js",
     "file/src/to-array.js.html",
     "src/to-array.js",
+    "file"
+  ],
+  [
+    "src/to-set.js",
+    "file/src/to-set.js.html",
+    "src/to-set.js",
     "file"
   ],
   [

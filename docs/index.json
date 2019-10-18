@@ -569,7 +569,7 @@
     "name": "src/all.js",
     "content": "/** \n * Tests if a function holds true for all elements in an iterable. \n * Always returns true for an empty iterable. \n * This function is curried. \n * @param {Function} f The condition to test for each element.\n * @param {Object} xs The iterable.\n * @returns {boolean}\n */\nexport const all = (f = x => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (!f(x)) {\n        return false;\n      }\n    }\n    return true;\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/all.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/all.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -632,7 +632,7 @@
     "name": "src/any.js",
     "content": "/** \n * Tests if a function holds true for any of the elements in an iterable. \n * Always returns false for an empty iterable. \n * This function is curried. \n * @param {Function} f The condition to test for each element.\n * @param {Object} xs The iterable.\n * @returns {boolean}\n */\nexport const any = (f = x => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (f(x)) {\n        return true;\n      }\n    }\n    return false;\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/any.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/any.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -695,7 +695,7 @@
     "name": "src/append.js",
     "content": "/** \n * Appends an object to the end of an iterable sequence. \n * This function is curried. \n * @param {Object} x The object to append.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const append = x => xs => ({\n  [Symbol.iterator]: function * () {\n    yield * xs;\n    yield x;\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/append.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/append.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -758,7 +758,7 @@
     "name": "src/buffer.js",
     "content": "/** \n * Takes an iterable and returns a new iterable with all of the same elements but with a memory buffer. \n * This can be used to prevent repeated computations. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const buffer = xs => {\n\n  if (!xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n\n  const b = [];\n  const g = xs[Symbol.iterator]();\n\n  const addToBuffer = () => {\n    const next = g.next();\n    if (next.done) {\n      return false;\n    }\n    b.push(next.value);\n    return true;\n  };\n\n  return {\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      while (true) {\n        while (i >= b.length) {\n          const moreToAdd = addToBuffer();\n          if (!moreToAdd) {\n            return;\n          }\n        }\n        yield b[i];\n        i++;\n      }\n    }\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/buffer.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/buffer.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -811,7 +811,7 @@
     "name": "src/chunk.js",
     "content": "/** \n * Splits an iterable into chunks of a given size. \n * The last chunk may be less than the specified size. \n * This function is curried. \n * @param {Number} n The chunk size.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const chunk = n => {\n  if (typeof n !== 'number') {\n    throw new TypeError('n must be a number');\n  }\n  if (n <= 0) {\n    throw new RangeError('n must be greater than zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let ys = [];\n      for (const x of xs) {\n        ys.push(x);\n        if (ys.length == n) {\n          yield ys;\n          ys = [];\n        }\n      }\n      if (ys.length > 0) {\n        yield ys;\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/chunk.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/chunk.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -874,7 +874,7 @@
     "name": "src/concat.js",
     "content": "/** \n * Concatenates two iterables into one.  \n * This function is curried. \n * @param {Object} ys The iterable to yield second.\n * @param {Object} xs The iterable to yield first.\n * @returns {Object}\n */\nexport const concat = ys => xs => ({\n  [Symbol.iterator]: function * () {\n    yield * xs;\n    yield * ys;\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/concat.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/concat.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -937,7 +937,7 @@
     "name": "src/count.js",
     "content": "/** \n * Counts the number of elements in an iterable. \n * @param {Object} xs The iterable.\n * @returns {number}\n */\nexport const count = xs => {\n  let i = 0;\n  for (const _ of xs) {\n    i++;\n  }\n  return i;\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/count.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/count.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -990,7 +990,7 @@
     "name": "src/default-comparison.js",
     "content": "export const defaultComparison = (i, j) => {\n  if (i == j) {\n    return 0;\n  }\n  if (i > j) {\n    return 1;\n  }\n  return -1;\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/default-comparison.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/default-comparison.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1037,7 +1037,7 @@
     "name": "src/default-equality.js",
     "content": "export const defaultEquality = {\n  hashCode: _ => 0, \n  isEqual: (x, y) => x == y,\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/default-equality.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/default-equality.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1068,7 +1068,7 @@
     "name": "src/empty.js",
     "content": "/** \n * An empty iterable. \n */\nexport const empty = {\n  [Symbol.iterator]: function * () {}\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/empty.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/empty.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1098,7 +1098,7 @@
     "name": "src/filter.js",
     "content": "/** \n * Takes an iterable and returns a new one including only elements that satisfy a given predicate.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object} f The predicate.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const filter = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        if (f(x)) {\n          yield x;\n        }\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/filter.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/filter.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1161,7 +1161,7 @@
     "name": "src/first.js",
     "content": "/** \n * Returns the first element of an iterable that satisfies a given predicate.   \n * This function will throw an error if no satisfactory element is found.  \n * This function is curried. \n * @param {Object=} f The predicate, defaults to always true.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const first = (f = _ => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (f(x)) {\n        return x;\n      }\n    }\n    throw new Error('Expected at least one element');\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/first.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/first.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1224,7 +1224,7 @@
     "name": "src/flat-map.js",
     "content": "/** \n * Takes an iterable and returns a new one where each element is transformed using the given function.  \n * Unlike map, the function is expected to return an iterable for each element. These iterables are concatenated. \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object} f The transformation function that returns an iterable.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const flatMap = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        yield * f(x);\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/flat-map.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/flat-map.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1287,7 +1287,7 @@
     "name": "src/forever.js",
     "content": "/** \n * Given an iterable returns a new iterable that repeats it forever. \n * Take care, since the resulting iterable is infinite. \n * @param {Object} xs The iterable to repeat.\n * @returns {Object}\n */\nexport const forever = xs => {\n  if (!xs) {\n    throw new TypeError('xs must be defined');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      while (true) {\n        yield * xs; \n      }\n    }\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/forever.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/forever.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1340,7 +1340,7 @@
     "name": "src/from-array.js",
     "content": "/** \n * Given an array, returns an iterable with equivalent elements. \n * You should not mutate the array used to create the iterable. \n * @param {Object} xs The array.\n * @returns {Object}\n */\nexport const fromArray = xs => {\n  if (!Array.isArray(xs)) {\n    throw new TypeError('xs must be an array');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      yield * xs;\n    }\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/from-array.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/from-array.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1393,7 +1393,7 @@
     "name": "src/from-generator.js",
     "content": "/** \n * Given a generator function, returns an iterable with equivalent elements. \n * @param {Object} xs The generator function.\n * @returns {Object}\n */\nexport const fromGenerator = f => {\n  if (!f) {\n    throw new TypeError('f must be a generator function');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      yield * f();\n    }\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/from-generator.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/from-generator.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1446,7 +1446,7 @@
     "name": "src/head.js",
     "content": "/** \n * Returns the first element of an iterable. \n * If the iterable is empty then an error is thrown. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const head = xs => {\n  for (const x of xs) {\n    return x;\n  }\n  throw new Error('Expected at least one element');\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/head.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/head.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1499,7 +1499,7 @@
     "name": "src/includes.js",
     "content": "import { defaultEquality } from './default-equality.js';\n\n/** \n * Tests if a an iterable contains a given element. \n * Also takes an equality object as an optional argument. \n * This function is partially curried. \n * @param {Object} element The element to look for. \n * @param {Object} [equality=defaultEquality] The equality system to use. \n * @param {Object} xs The iterable to search. \n * @returns {boolean}\n */\nexport const includes = (element, equality = defaultEquality) => {\n  const { isEqual } = equality;\n  if (!isEqual) {\n    throw new TypeError('equality must have a isEqual property');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (isEqual(element, x)) {\n        return true;\n      }\n    }\n    return false;\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/includes.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/includes.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1572,9 +1572,9 @@
     "__docId__": 84,
     "kind": "file",
     "name": "src/index.js",
-    "content": "/** @module seq */\n\nexport { all } from './all.js';\nexport { any } from './any.js';\nexport { append } from './append.js';\nexport { buffer } from './buffer.js';\nexport { chunk } from './chunk.js';\nexport { concat } from './concat.js';\nexport { count } from './count.js';\nexport { defaultComparison } from './default-comparison.js';\nexport { defaultEquality } from './default-equality.js';\nexport { empty } from './empty.js';\nexport { filter } from './filter.js';\nexport { first } from './first.js';\nexport { flatMap } from './flat-map.js';\nexport { forever } from './forever.js';\nexport { fromArray } from './from-array.js';\nexport { fromGenerator } from './from-generator.js';\nexport { head } from './head.js';\nexport { includes } from './includes.js';\nexport { indexed } from './indexed.js';\nexport { isIterable } from './is-iterable.js';\nexport { set } from './set.js';\nexport { sum } from './sum.js';\nexport { tail } from './tail.js';\nexport { take } from './take.js';\nexport { takeWhile } from './take-while.js';\nexport { join } from './join.js';\nexport { just } from './just.js';\nexport { last } from './last.js';\nexport { map } from './map.js';\nexport { max } from './max.js';\nexport { min } from './min.js';\nexport { none } from './none.js';\nexport { nth } from './nth.js';\nexport { once } from './once.js';\nexport { prepend } from './prepend.js';\nexport { range } from './range.js';\nexport { reduce } from './reduce.js';\nexport { remove } from './remove.js';\nexport { repeat } from './repeat.js';\nexport { reverse } from './reverse.js';\nexport { single } from './single.js';\nexport { skipUntil } from './skip-until.js';\nexport { skip } from './skip.js';\nexport { smoosh } from './smoosh.js';\nexport { sorted } from './sorted.js';\nexport { sortedBy } from './sorted-by.js';\nexport { strictEquality } from './strict-equality.js';\nexport { toArray } from './to-array.js';\nexport { unique } from './unique.js';\nexport { update } from './update.js';\nexport { zip } from './zip.js';\n",
+    "content": "/** @module seq */\n\nexport { all } from './all.js';\nexport { any } from './any.js';\nexport { append } from './append.js';\nexport { buffer } from './buffer.js';\nexport { chunk } from './chunk.js';\nexport { concat } from './concat.js';\nexport { count } from './count.js';\nexport { defaultComparison } from './default-comparison.js';\nexport { defaultEquality } from './default-equality.js';\nexport { structuralEquality } from './structural-equality/index.js';\nexport { empty } from './empty.js';\nexport { filter } from './filter.js';\nexport { first } from './first.js';\nexport { flatMap } from './flat-map.js';\nexport { forever } from './forever.js';\nexport { fromArray } from './from-array.js';\nexport { fromGenerator } from './from-generator.js';\nexport { head } from './head.js';\nexport { includes } from './includes.js';\nexport { indexed } from './indexed.js';\nexport { isIterable } from './is-iterable.js';\nexport { set } from './set.js';\nexport { sum } from './sum.js';\nexport { tail } from './tail.js';\nexport { take } from './take.js';\nexport { takeWhile } from './take-while.js';\nexport { join } from './join.js';\nexport { just } from './just.js';\nexport { last } from './last.js';\nexport { map } from './map.js';\nexport { max } from './max.js';\nexport { min } from './min.js';\nexport { none } from './none.js';\nexport { nth } from './nth.js';\nexport { once } from './once.js';\nexport { prepend } from './prepend.js';\nexport { range } from './range.js';\nexport { reduce } from './reduce.js';\nexport { remove } from './remove.js';\nexport { repeat } from './repeat.js';\nexport { reverse } from './reverse.js';\nexport { single } from './single.js';\nexport { skipUntil } from './skip-until.js';\nexport { skip } from './skip.js';\nexport { smoosh } from './smoosh.js';\nexport { sorted } from './sorted.js';\nexport { sortedBy } from './sorted-by.js';\nexport { strictEquality } from './strict-equality.js';\nexport { toArray } from './to-array.js';\nexport { unique } from './unique.js';\nexport { update } from './update.js';\nexport { zip } from './zip.js';\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/index.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1585,7 +1585,7 @@
     "name": "src/indexed.js",
     "content": "import { range } from './range.js';\nimport { zip } from './zip.js';\n\nexport const indexed = xs => zip(xs)(range());\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/indexed.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/indexed.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1622,7 +1622,7 @@
     "name": "src/is-iterable.js",
     "content": "/** \n * Tests if a given object is an iterable \n * @param {Object} xs The object to test.\n * @returns {Boolean}\n */\nexport const isIterable = xs => !!xs && !!xs[Symbol.iterator];\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/is-iterable.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/is-iterable.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1675,7 +1675,7 @@
     "name": "src/join.js",
     "content": "/** \n * Joins all elements in an iterable using the given seperator. \n * If the iterable is empty then the empty string is returned. \n * @param {String=} s The seperator string. \n * @param {Object} xs The iterable to join. \n * @returns {String}\n */\nexport const join = (s = '') => xs => {\n  if (!xs || !xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n  let result = '';\n  let isFirst = true;\n  for (const x of xs) {\n    if (isFirst) {\n      result = x;\n      isFirst = false;\n    } else {\n      result = result + s + x;\n    }\n  }\n  return result;\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/join.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/join.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1738,7 +1738,7 @@
     "name": "src/just.js",
     "content": "/** \n * Constructs an iterable from a fixed list of elements. \n * This function is variadic. \n * @param {...Object} elements The elements of the iterable. \n * @returns {Object}\n */\nexport const just = function() {\n  const xs = [ ...arguments ];\n  return ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        yield x;\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/just.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/just.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1791,7 +1791,7 @@
     "name": "src/last.js",
     "content": "/** \n * Returns the last element of an iterable that satisfies a given predicate.   \n * This function will throw an error if no satisfactory element is found.  \n * This function is curried. \n * @param {Object=} f The predicate, defaults to always true.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const last = (f = _ => true) => xs => {\n  let hasFoundValue = false;\n  let y = null;\n  for (const x of xs) {\n    if (f(x)) {\n      hasFoundValue = true;\n      y = x;\n    }\n  }\n  if (hasFoundValue) {\n    return y;\n  }\n  throw new Error('Expected at least one element');\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/last.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/last.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1854,7 +1854,7 @@
     "name": "src/map.js",
     "content": "/** \n * Takes an iterable and returns a new one where each element is transformed using the given function.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object} f The transformation function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const map = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        yield f(x);\n      };\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/map.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/map.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1917,7 +1917,7 @@
     "name": "src/max.js",
     "content": "import { defaultComparison } from './default-comparison.js';\nimport { min } from './min.js';\n\n/** \n * Takes an iterable and returns the largest element, according to the given comparison. \n * This function is curried. \n * @param {Object=} c The comparison.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const max = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return min((i, j) => c(j, i));\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/max.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/max.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1980,7 +1980,7 @@
     "name": "src/min.js",
     "content": "import { defaultComparison } from './default-comparison.js';\n\n/** \n * Takes an iterable and returns the smallest element, according to the given comparison. \n * This function is curried. \n * @param {Object=} c The comparison.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const min = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return xs => {\n    if (!xs) {\n      throw new TypeError('xs must be define');\n    }\n    let min = null;\n    let foundMin = false;\n    for (const x of xs) {\n      if (foundMin) {\n        if (c(x, min) < 0) {\n          min = x;\n        }\n      } else {\n        foundMin = true;\n        min = x;\n      }\n    }\n    if (foundMin) {\n      return min;\n    }\n    throw new Error('Expected at least one element but found none');\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/min.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/min.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2043,7 +2043,7 @@
     "name": "src/none.js",
     "content": "/** \n * Tests if a function holds true for none of the elements in an iterable. \n * Always returns true for an empty iterable. \n * By default, this function returns false for an iterable with any elements. \n * This function is curried. \n * @param {Function=} f The condition to test for each element.\n * @param {Object} xs The iterable.\n * @returns {boolean}\n */\nexport const none = (f = _ => true) => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => {\n    for (const x of xs) {\n      if (f(x)) {\n        return false;\n      }\n    }\n    return true;\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/none.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/none.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2106,7 +2106,7 @@
     "name": "src/nth.js",
     "content": "/** \n * Returns the nth element of an iterable.    \n * This function will throw an error if the iterable is not long enough.  \n * This function is curried. \n * @param {Number} n The zero-based index of the element to return.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const nth = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => {\n    let i = 0;\n    for (const x of xs) {\n      if (i === n) {\n        return x;\n      }\n      i++;\n    }\n    throw new Error('Tried to take the ' + n + 'th element, but there were only ' + i);\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/nth.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/nth.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2169,7 +2169,7 @@
     "name": "src/once.js",
     "content": "/** \n * Takes an iterable and returns a new iterable that may only be iterated once. \n * This function is useful for debugging purposes. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const once = xs => {\n  if (!xs) {\n    throw new TypeError('xs must be defined');\n  }\n  let hasBeenCalled = false;\n  return {\n    [Symbol.iterator]: function * () {\n      if (hasBeenCalled) {\n        throw new Error('once(xs) may only be iterated once. ');\n      } else {\n        hasBeenCalled = true;\n      }\n      yield * xs;\n    }\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/once.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/once.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2222,7 +2222,7 @@
     "name": "src/prepend.js",
     "content": "/** \n * Prepends an object to the start of an iterable sequence. \n * This function is curried. \n * @param {Object} x The object to prepend.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const prepend = x => xs => ({\n  [Symbol.iterator]: function * () {\n    yield x;\n    yield * xs;\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/prepend.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/prepend.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2285,7 +2285,7 @@
     "name": "src/range.js",
     "content": "/** \n * Creates an iterable of numbers from zero to the given limit. \n * @param {Number=} n The number to count to.\n * @returns {Object}\n */\nexport const range = (n = Infinity) => {\n  if (typeof n !== 'number') {\n    throw new TypeError('n must be a number');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return {\n    [Symbol.iterator]: function * () {\n      for (let i = 0; i < n; i++) {\n        yield i;\n      }\n    }\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/range.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/range.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2338,7 +2338,7 @@
     "name": "src/reduce.js",
     "content": "/** \n * Performs a reduction of an iterable, starting from a given state and reducer function. \n * Note that this function must not be called on an infinite iterable. \n * This function is partially curried. \n * @param {Object} s The initial state. \n * @param {Object} f The reducer function. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const reduce = (s, f) => (xs) => {\n  let w = s;\n  for (const x of xs) {\n    w = f(w, x);\n  }\n  return w;\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/reduce.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/reduce.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2411,7 +2411,7 @@
     "name": "src/remove.js",
     "content": "/** \n * Takes an iterable and returns a new iterable where\n * the nth element has been skipped.  \n * This function is curried. \n * @param {Number} n The index of the element to replace. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const remove = n => xs => ({\n  [Symbol.iterator]: function * () {\n    let i = 0;\n    for (const x of xs) {\n      if (i != n) {\n        yield x;\n      }\n      i++;\n    }\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/remove.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/remove.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2474,7 +2474,7 @@
     "name": "src/repeat.js",
     "content": "/** \n * Repeats an iterable for the given number of times. \n * This function is curried. \n * @param {Number} n The number of repetitions. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const repeat = n => {\n  if (Number.isNaN(n) || !Number.isSafeInteger(n)) {\n    throw new TypeError('n must be a number');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (let i = 0; i < n; i++) {\n        yield * xs;\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/repeat.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/repeat.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2537,7 +2537,7 @@
     "name": "src/reverse.js",
     "content": "/** \n * Given an iterable, returns a new iterable with the elements reversed. \n * Note that this function must not be called on an infinite iterable. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const reverse = xs => ({\n  [Symbol.iterator]: function * () {\n    const ys = [ ...xs ];\n    ys.reverse();\n    yield * ys;\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/reverse.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/reverse.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2590,7 +2590,7 @@
     "name": "src/set.js",
     "content": "/** \n * Takes an iterable and returns a new iterable where\n * the nth element has been set to a given value.  \n * This function is curried. \n * @param {Number} n The index of the element to replace. \n * @param {Object} value The new value. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const set = (n, value) => xs => ({\n  [Symbol.iterator]: function * () {\n    let i = 0;\n    for (const x of xs) {\n      if (i == n) {\n        yield value;\n      } else {\n        yield x;\n      }\n      i++;\n    }\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/set.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/set.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2663,7 +2663,7 @@
     "name": "src/single.js",
     "content": "/** \n * Returns the first element of an iterable that satisfies a given predicate.   \n * This function will throw an error if no satisfactory element is found.  \n * This function is curried. \n * @param {Object=} f The predicate, defaults to always true.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const single = (f = _ => true) => xs => {\n  let hasFoundValue = false;\n  let y = null;\n  for (const x of xs) {\n    if (f(x)) {\n      if (hasFoundValue) {\n        throw new Error('Expected exactly one element but found at least two');\n      }\n      hasFoundValue = true;\n      y = x;\n    }\n  }\n  if (hasFoundValue) {  \n    return y;\n  }\n  throw new Error('Expected exactly one element but found none');\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/single.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/single.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2726,7 +2726,7 @@
     "name": "src/skip-until.js",
     "content": "/** \n * Skips elements from an iterable for as long as the elements satisfy a given condition. \n * The first element that satisfies the condition will be included. \n * This function is curried. \n * @param {Object} f The function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const skipUntil = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let shouldYield = false;\n      for (const x of xs) {\n        if (shouldYield) {\n          yield x;\n        } else {\n          if (f(x)) {\n            yield x;\n            shouldYield = true;\n          }\n        }\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/skip-until.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/skip-until.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2789,7 +2789,7 @@
     "name": "src/skip.js",
     "content": "/** \n * Skips the first n elements of an iterable. \n * If there are fewer than n elements in an iterable, then an empty iterable will be returned. \n * This function is curried. \n * @param {Number} n The number of elements to skip.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const skip = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      for (const x of xs) {\n        if (i >= n) {\n          yield x;\n        }\n        i++;\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/skip.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/skip.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2852,7 +2852,7 @@
     "name": "src/smoosh.js",
     "content": "import { isIterable } from './is-iterable.js';\n\nconst peek = xs => xs[xs.length - 1];\n\n/** \n * Deep flattens an iterable and all of its nested iterables. \n * Strings are not considered iterables for this function. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const smoosh = xs => ({\n  [Symbol.iterator]: function * () {\n    const pending = [ xs[Symbol.iterator]() ];\n    while (pending.length > 0) {\n      let { value, done } = peek(pending).next();\n      if (done) {\n        pending.pop();\n      } else {\n        if (typeof value !== 'string' && isIterable(value)) {\n          pending.push(value[Symbol.iterator]());\n        } else {\n          yield value;\n        }\n      }\n    }\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/smoosh.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/smoosh.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2932,7 +2932,7 @@
     "name": "src/sorted-by.js",
     "content": "import { defaultComparison } from './default-comparison.js';\nimport { map } from './map.js';\nimport { toArray } from './to-array.js';\n\nexport const sortedBy = (f, c = defaultComparison) => {\n  if (!f) {\n    throw new TypeError('f must be defined');\n  }\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  const comparison = (i, j) => c(i.score, j.score);\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...map(x => ({ score: f(x), value: x }))(xs) ];\n      ys.sort(comparison);\n      yield * map(x => x.value)(ys);\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/sorted-by.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/sorted-by.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -2982,7 +2982,7 @@
     "name": "src/sorted.js",
     "content": "import { defaultComparison } from './default-comparison.js';\nimport { toArray } from './to-array.js';\n\n/** \n * Given an iterable, returns a new iterable with the elements sorted. \n * Note that this function must not be called on an infinite iterable. \n * @param {Object=} c The comparison function to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const sorted = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...xs ];\n      ys.sort(c);\n      yield * ys;\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/sorted.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/sorted.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -3045,7 +3045,7 @@
     "name": "src/strict-equality.js",
     "content": "export const strictEquality = {\n  hashCode: _ => 0, \n  isEqual: (x, y) => x === y,\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/strict-equality.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/strict-equality.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -3073,16 +3073,241 @@
   {
     "__docId__": 136,
     "kind": "file",
-    "name": "src/sum.js",
-    "content": "/** \n * Sums all elements in an iterable. \n * If the iterable is empty then zero is returned. \n * @param {Object} xs The iterable.\n * @returns {Number}\n */\nexport const sum = xs => {\n  if (!xs || !xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n  let result = 0;\n  for (const x of xs) {\n    result = result + x;\n  }\n  return result;\n};\n",
+    "name": "src/structural-equality/hash-code.js",
+    "content": "const hashCodeString = s => {\n  let h = 0;\n\n  for (let i = 0; i < s.length; i++) {\n    h = (h << 5) - h + s.charCodeAt(i) | 0;\n  }\n\n  return h;\n};\n\nconst hashCodeNumber = x => {\n  if (Number.isNaN(x)) {\n    return 0;\n  }\n\n  if (!Number.isFinite(x)) {\n    return 0;\n  }\n\n  return Math.trunc(x) % 2147483647; // A large prime number\n};\n\nconst hashCodeObject = (x, visited) => {\n  let hash = 0;\n\n  for (const [ key, value ] of Object.entries(x)) {\n    hash = ((hash << 5) - hash) +\n      hashCodeString(key) * 7 +\n      hashCode(value, visited);\n    hash = hash & hash;\n  }\n\n  return hash;\n};\n\nexport function hashCode(x, visited = new Set()) {\n  if (x === undefined) {\n    throw new ReferenceError('x must not be undefined');\n  }\n\n  if (x === null) {\n    return 0;\n  }\n\n  if (typeof x === 'number') {\n    return hashCodeNumber(x);\n  }\n\n  if (typeof x === 'string') {\n    return hashCodeString(x);\n  }\n\n  if (typeof x === 'object') {\n    if (visited.has(x)) {\n      return 0;\n    }\n\n    visited.add(x);\n\n    return hashCodeObject(x, visited);\n  }\n\n  return 0;\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/sum.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/structural-equality/hash-code.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "__docId__": 137,
+    "kind": "function",
+    "name": "hashCodeString",
+    "memberof": "src/structural-equality/hash-code.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/structural-equality/hash-code.js~hashCodeString",
+    "access": "public",
+    "export": false,
+    "importPath": "@njlr/seq",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "s",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "function",
+    "name": "hashCodeNumber",
+    "memberof": "src/structural-equality/hash-code.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/structural-equality/hash-code.js~hashCodeNumber",
+    "access": "public",
+    "export": false,
+    "importPath": "@njlr/seq",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "function",
+    "name": "hashCodeObject",
+    "memberof": "src/structural-equality/hash-code.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/structural-equality/hash-code.js~hashCodeObject",
+    "access": "public",
+    "export": false,
+    "importPath": "@njlr/seq",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "visited",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "function",
+    "name": "hashCode",
+    "memberof": "src/structural-equality/hash-code.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/structural-equality/hash-code.js~hashCode",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq",
+    "importStyle": "{hashCode}",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "visited",
+        "optional": true,
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "file",
+    "name": "src/structural-equality/index.js",
+    "content": "import { hashCode } from './hash-code.js';\nimport { isEqual } from './is-equal.js';\n\nexport const structuralEquality = {\n  hashCode,\n  isEqual,\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/seq/src/structural-equality/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 142,
+    "kind": "variable",
+    "name": "structuralEquality",
+    "memberof": "src/structural-equality/index.js",
+    "static": true,
+    "longname": "src/structural-equality/index.js~structuralEquality",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq",
+    "importStyle": "{structuralEquality}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"hashCode\": *, \"isEqual\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 143,
+    "kind": "file",
+    "name": "src/structural-equality/is-equal.js",
+    "content": "export const isEqual = (x, y) => {\n  if (x === undefined) {\n    throw new ReferenceError('x must not be undefined');\n  }\n\n  if (y === undefined) {\n    throw new ReferenceError('y must not be undefined');\n  }\n\n  if (x === y) {\n    return true;\n  }\n\n  if (x === null) {\n    return y === null;\n  }\n\n  if (typeof x === 'number') {\n    return x === y;\n  }\n\n  if (typeof x === 'string') {\n    return x === y;\n  }\n\n  if (typeof x === 'object') {\n    if (typeof y !== 'object') {\n      return false;\n    }\n\n    if (Object.entries(x).length !== Object.entries(y).length) {\n      return false;\n    }\n\n    for (const [ key, value ] of Object.entries(x)) {\n      if (y[key] === undefined) {\n        return false;\n      }\n\n      if (!isEqual(value, y[key])) {\n        return false;\n      }\n    }\n\n    return true;\n  }\n\n  return false;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/seq/src/structural-equality/is-equal.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "isEqual",
+    "memberof": "src/structural-equality/is-equal.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/structural-equality/is-equal.js~isEqual",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq",
+    "importStyle": "{isEqual}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "y",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/sum.js",
+    "content": "/** \n * Sums all elements in an iterable. \n * If the iterable is empty then zero is returned. \n * @param {Object} xs The iterable.\n * @returns {Number}\n */\nexport const sum = xs => {\n  if (!xs || !xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n  let result = 0;\n  for (const x of xs) {\n    result = result + x;\n  }\n  return result;\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/seq/src/sum.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
     "kind": "function",
     "name": "sum",
     "memberof": "src/sum.js",
@@ -3124,18 +3349,18 @@
     }
   },
   {
-    "__docId__": 138,
+    "__docId__": 147,
     "kind": "file",
     "name": "src/tail.js",
     "content": "/** \n * Returns an iterable of all elements except the first. \n * If the iterable is empty then an error is thrown. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const tail = xs => ({\n  [Symbol.iterator]: function * () {\n    let isFirst = true;\n    for (const x of xs) {\n      if (isFirst) {\n        isFirst = false;\n      } else {\n        yield x;\n      }\n    }\n    if (isFirst) {\n      throw new Error('Expected at least one element');\n    }\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/tail.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/tail.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 139,
+    "__docId__": 148,
     "kind": "function",
     "name": "tail",
     "memberof": "src/tail.js",
@@ -3177,18 +3402,18 @@
     }
   },
   {
-    "__docId__": 140,
+    "__docId__": 149,
     "kind": "file",
     "name": "src/take-while.js",
     "content": "/** \n * Takes elements from an iterable for as long as the elements satisfy a given condition. \n * The first element that does satisfies the condition will not be included. \n * This function is curried. \n * @param {Object} f The function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const takeWhile = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        if (!f(x)) {\n          return;\n        }\n        yield x;\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/take-while.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/take-while.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 141,
+    "__docId__": 150,
     "kind": "function",
     "name": "takeWhile",
     "memberof": "src/take-while.js",
@@ -3240,18 +3465,18 @@
     }
   },
   {
-    "__docId__": 142,
+    "__docId__": 151,
     "kind": "file",
     "name": "src/take.js",
     "content": "/** \n * Takes the first n elements of an iterable. \n * If there are fewer than n elements in an iterable, then this has no effect. \n * This function is curried. \n * @param {Number} n The number of elements to take.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const take = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      for (const x of xs) {\n        if (i >= n) {\n          return;\n        }\n        yield x;\n        i++;\n      }\n    }\n  });\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/take.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/take.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 143,
+    "__docId__": 152,
     "kind": "function",
     "name": "take",
     "memberof": "src/take.js",
@@ -3303,18 +3528,18 @@
     }
   },
   {
-    "__docId__": 144,
+    "__docId__": 153,
     "kind": "file",
     "name": "src/to-array.js",
-    "content": "/** \n * Takes an iterable and converts it into an array. \n * This shuld only be called on finite iterables. \n * @param {Object} xs The iterable.\n * @returns {Array}\n */\nexport const toArray = xs => {\n  if (Array.isArray(xs)) {\n    return xs;\n  }\n  const result = [];\n  for (const x of xs) {\n    result.push(x);\n  }\n  return result;\n};\n",
+    "content": "/** \n * Takes an iterable and converts it into an array. \n * This should only be called on finite iterables. \n * @param {Object} xs The iterable.\n * @returns {Array}\n */\nexport const toArray = xs => {\n  if (Array.isArray(xs)) {\n    return xs;\n  }\n  const result = [];\n  for (const x of xs) {\n    result.push(x);\n  }\n  return result;\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/to-array.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/to-array.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 145,
+    "__docId__": 154,
     "kind": "function",
     "name": "toArray",
     "memberof": "src/to-array.js",
@@ -3326,7 +3551,7 @@
     "export": true,
     "importPath": "@njlr/seq",
     "importStyle": "{toArray}",
-    "description": "Takes an iterable and converts it into an array. \nThis shuld only be called on finite iterables. ",
+    "description": "Takes an iterable and converts it into an array. \nThis should only be called on finite iterables. ",
     "lineNumber": 7,
     "unknown": [
       {
@@ -3356,18 +3581,71 @@
     }
   },
   {
-    "__docId__": 146,
+    "__docId__": 155,
     "kind": "file",
-    "name": "src/unique.js",
-    "content": "import { defaultEquality } from './default-equality.js';\n\n/** \n * Takes an iterable and returns a new one with duplicate elements removed.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object=} e The equality system to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const unique = (e = defaultEquality) => {\n  const { hashCode, isEqual } = e;\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const buckets = new Map();\n      for (const x of xs) {\n        const h = hashCode(x);\n        const bucket = buckets.get(h);\n        if (bucket) {\n          let foundExactMatch = false;\n          for (const y of bucket) {\n            if (isEqual(x, y)) {\n              foundExactMatch = true;\n              break;\n            }\n          }\n          if (!foundExactMatch) {\n            yield x;\n            bucket.push(x);\n          }\n        } else {\n          yield x;\n          buckets.set(h, [ x ]);\n        }\n      }\n    }\n  });\n};\n",
+    "name": "src/to-set.js",
+    "content": "/** \n * Takes an iterable and converts it into a set. \n * This should only be called on finite iterables. \n * @param {Object} xs The iterable.\n * @returns {Set}\n */\nexport const toSet = xs => {\n  return new Set(xs);\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/unique.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/to-set.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 147,
+    "__docId__": 156,
+    "kind": "function",
+    "name": "toSet",
+    "memberof": "src/to-set.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/to-set.js~toSet",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq",
+    "importStyle": "{toSet}",
+    "description": "Takes an iterable and converts it into a set. \nThis should only be called on finite iterables. ",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Set}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xs",
+        "description": "The iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Set"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "file",
+    "name": "src/unique.js",
+    "content": "import { defaultEquality } from './default-equality.js';\n\n/** \n * Takes an iterable and returns a new one with duplicate elements removed.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object=} e The equality system to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const unique = (e = defaultEquality) => {\n  const { hashCode, isEqual } = e;\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const buckets = new Map();\n      for (const x of xs) {\n        const h = hashCode(x);\n        const bucket = buckets.get(h);\n        if (bucket) {\n          let foundExactMatch = false;\n          for (const y of bucket) {\n            if (isEqual(x, y)) {\n              foundExactMatch = true;\n              break;\n            }\n          }\n          if (!foundExactMatch) {\n            yield x;\n            bucket.push(x);\n          }\n        } else {\n          yield x;\n          buckets.set(h, [ x ]);\n        }\n      }\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/nick-la-rooy/Documents/seq/src/unique.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 158,
     "kind": "function",
     "name": "unique",
     "memberof": "src/unique.js",
@@ -3419,18 +3697,18 @@
     }
   },
   {
-    "__docId__": 148,
+    "__docId__": 159,
     "kind": "file",
     "name": "src/update.js",
     "content": "/** \n * Takes an iterable and returns a new iterable where\n * the nth element has been updated with the given function.  \n * This function is curried. \n * @param {Number} n The index of the element to replace. \n * @param {Function} f The update function. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const update = (n, f) => xs => ({\n  [Symbol.iterator]: function * () {\n    let i = 0;\n    for (const x of xs) {\n      if (i == n) {\n        yield f(x);\n      } else {\n        yield x;\n      }\n      i++;\n    }\n  }\n});\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/update.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/update.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 149,
+    "__docId__": 160,
     "kind": "function",
     "name": "update",
     "memberof": "src/update.js",
@@ -3492,18 +3770,18 @@
     }
   },
   {
-    "__docId__": 150,
+    "__docId__": 161,
     "kind": "file",
     "name": "src/zip.js",
     "content": "/** \n * Combines two iterables into one by pairing elements. \n * Each pair is a two element array. \n * The longer of the two iterables will be truncated to match the length of the shorter one.  \n * This function is curried. \n * @param {Object} ys The iterable whose elements will be the second element of the pairs.\n * @param {Object} xs The iterable whose elements will be the first element of the pairs.\n * @returns {Object}\n */\nexport const zip = ys => {\n  if (!ys[Symbol.iterator]) {\n    throw new TypeError('ys must be iterable');\n  }\n  return xs => {\n    if (!xs[Symbol.iterator]) {\n      throw new TypeError('xs must be iterable');\n    }\n    return {\n      [Symbol.iterator]: function * () {\n        const xsGenerator = xs[Symbol.iterator]();\n        const ysGenerator = ys[Symbol.iterator]();\n        while (true) {\n          const x = xsGenerator.next();\n          const y = ysGenerator.next();\n          if (x.done || y.done) {\n            break;\n          }\n          yield [ x.value, y.value ];\n        }\n      }\n    };\n  };\n};\n",
     "static": true,
-    "longname": "/home/njlr/Documents/onwardlabs/seq/src/zip.js",
+    "longname": "/home/nick-la-rooy/Documents/seq/src/zip.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
-    "__docId__": 151,
+    "__docId__": 162,
     "kind": "function",
     "name": "zip",
     "memberof": "src/zip.js",
@@ -3557,15 +3835,15 @@
   {
     "kind": "index",
     "content": "# seq\n\nA simple library for manipulating generators and arrays in JavaScript. \n\n[![Travis](https://img.shields.io/travis/njlr/seq.svg)](https://travis-ci.org/njlr/seq) \n\n## Get Started\n\nInstall using [Yarn](https://yarnpkg.com/): \n\n```bash=\nyarn add @njlr/seq\n```\n\nInstall using [NPM](https://www.npmjs.com/): \n\n\n```bash=\nnpm install --save @njlr/seq\n```\n\nYou can [browse the documentation on GitHub](https://njlr.github.io/seq/).\n\n\n## Why? 🤔\n\n * Some of the built-in Array functions are mutating (e.g. `Array.prototype.sort`). \n * Many array functions are missing. Where is `Array.prototype.flatMap`?\n * A chain of array functions creates a new array at every stage: the operations are not lazy. \n * [lodash](https://lodash.com/) and [friends](https://github.com/jussi-kalliokoski/trine) require either a wrapper object or binding for chaining calls. We use the [pipeline operator](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-pipeline-operator) (`|>`) to achieve this at compile-time! \n * This package is a good citizen. It has no dependencies and does not mutate any global objects. \n\n\n## Demo\n\n```javascript=\nimport * as seq from '@njlr/seq';\n\nconst x = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] \n  |> seq.unique()\n  |> seq.map(x => x * 2)\n  |> seq.filter(x => x > 4)\n  |> seq.sorted()\n  |> seq.toArray;\n\n// x is [ 6, 8, 10, 14 ]\n```\n\nSince seq works on iterables, you can also use `for...of` loops:\n\n```javascript=\nimport * as seq from '@njlr/seq';\n\nfor (const x of seq.range(10) |> seq.map(x => x * x)) {\n  console.log(x);\n}\n```\n\nThis library also plays nicely with spread syntax! \n\n```javascript=\nconst squares = [ ... seq.range(10) |> seq.map(x => x * x) ];\n```\n\n\n## Development\n\nDependencies are managed by Yarn: \n\n```bash=\nyarn install --pure-lockfile\n```\n\nTo run all tests:\n\n```bash=\nyarn test\n```\n\nTo build the library:\n\n```bash=\nyarn build\n```\n\nTo build the documentation: \n\n```bash=\nyarn docs\n```\n\nTo release a new version:\n\n```bash=\nnpm publish --access public \n```\n",
-    "longname": "/home/njlr/Documents/onwardlabs/seq/README.md",
+    "longname": "/home/nick-la-rooy/Documents/seq/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@njlr/seq\",\n  \"version\": \"3.2.0\",\n  \"entry\": \"./src/index.js\",\n  \"main\": \"./lib/index.js\",\n  \"repository\": \"git@github.com:njlr/seq.git\",\n  \"author\": \"njlr <njlr@users.noreply.github.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"rollup -c\",\n    \"docs\": \"rm -rf docs && esdoc\",\n    \"test\": \"jest\",\n    \"prepublishOnly\": \"yarn test && yarn build\"\n  },\n  \"jest\": {\n    \"testURL\": \"http://localhost\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.0.0-beta.40\",\n    \"@babel/node\": \"^7.0.0-beta.40\",\n    \"@babel/plugin-proposal-pipeline-operator\": \"^7.0.0-beta.40\",\n    \"@babel/preset-env\": \"^7.0.0-beta.40\",\n    \"babel-core\": \"^7.0.0-0\",\n    \"babel-jest\": \"^22.4.0\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^22.4.0\",\n    \"regenerator-runtime\": \"^0.11.1\",\n    \"rollup\": \"^0.56.2\",\n    \"rollup-plugin-babel\": \"^4.0.0-beta.0\"\n  }\n}\n",
-    "longname": "/home/njlr/Documents/onwardlabs/seq/package.json",
+    "content": "{\n  \"name\": \"@njlr/seq\",\n  \"version\": \"3.3.0\",\n  \"entry\": \"./src/index.js\",\n  \"main\": \"./lib/index.js\",\n  \"repository\": \"git@github.com:njlr/seq.git\",\n  \"author\": \"njlr <njlr@users.noreply.github.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"rollup -c\",\n    \"docs\": \"rm -rf docs && esdoc\",\n    \"test\": \"jest\",\n    \"prepublishOnly\": \"yarn test && yarn build\"\n  },\n  \"jest\": {\n    \"testURL\": \"http://localhost\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.0.0-beta.40\",\n    \"@babel/node\": \"^7.0.0-beta.40\",\n    \"@babel/plugin-proposal-pipeline-operator\": \"^7.0.0-beta.40\",\n    \"@babel/preset-env\": \"^7.0.0-beta.40\",\n    \"babel-core\": \"^7.0.0-0\",\n    \"babel-jest\": \"^22.4.0\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^22.4.0\",\n    \"regenerator-runtime\": \"^0.11.1\",\n    \"rollup\": \"^0.56.2\",\n    \"rollup-plugin-babel\": \"^4.0.0-beta.0\"\n  }\n}\n",
+    "longname": "/home/nick-la-rooy/Documents/seq/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
