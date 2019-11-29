@@ -1,8 +1,6 @@
 /node_modules/
 /__tests__/
 /docs/
-/src/
-/.babelrc
 /.travis.yml
 /rollup.config.js
 /.esdoc.json

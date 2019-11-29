@@ -19,7 +19,7 @@ export const groupBy = (f, equality = defaultEquality) => xs => {
   return fromGenerator(function * () {
     const d = dict(equality);
 
-    for (const x of xs |> buffer) {
+    for (const x of buffer(xs)) {
       const key = f(x);
       const group = d.get(key);
 

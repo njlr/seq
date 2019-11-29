@@ -1572,7 +1572,7 @@
     "__docId__": 84,
     "kind": "file",
     "name": "src/index.js",
-    "content": "/** @module seq */\n\nexport { all } from './all.js';\nexport { any } from './any.js';\nexport { append } from './append.js';\nexport { buffer } from './buffer.js';\nexport { chunk } from './chunk.js';\nexport { concat } from './concat.js';\nexport { count } from './count.js';\nexport { defaultComparison } from './default-comparison.js';\nexport { defaultEquality } from './default-equality.js';\nexport { dict } from './dict.js';\nexport { structuralEquality } from './structural-equality/index.js';\nexport { empty } from './empty.js';\nexport { filter } from './filter.js';\nexport { first } from './first.js';\nexport { flatMap } from './flat-map.js';\nexport { forever } from './forever.js';\nexport { fromArray } from './from-array.js';\nexport { fromGenerator } from './from-generator.js';\nexport { groupBy } from './group-by.js';\nexport { head } from './head.js';\nexport { includes } from './includes.js';\nexport { indexed } from './indexed.js';\nexport { isIterable } from './is-iterable.js';\nexport { set } from './set.js';\nexport { sum } from './sum.js';\nexport { tail } from './tail.js';\nexport { take } from './take.js';\nexport { takeWhile } from './take-while.js';\nexport { join } from './join.js';\nexport { just } from './just.js';\nexport { last } from './last.js';\nexport { map } from './map.js';\nexport { max } from './max.js';\nexport { min } from './min.js';\nexport { none } from './none.js';\nexport { nth } from './nth.js';\nexport { once } from './once.js';\nexport { prepend } from './prepend.js';\nexport { range } from './range.js';\nexport { reduce } from './reduce.js';\nexport { remove } from './remove.js';\nexport { repeat } from './repeat.js';\nexport { reverse } from './reverse.js';\nexport { single } from './single.js';\nexport { skipUntil } from './skip-until.js';\nexport { skip } from './skip.js';\nexport { smoosh } from './smoosh.js';\nexport { sorted } from './sorted.js';\nexport { sortedBy } from './sorted-by.js';\nexport { strictEquality } from './strict-equality.js';\nexport { toArray } from './to-array.js';\nexport { unique } from './unique.js';\nexport { update } from './update.js';\nexport { zip } from './zip.js';\n",
+    "content": "/** @module seq */\n\nexport { all } from './all.js';\nexport { any } from './any.js';\nexport { append } from './append.js';\nexport { buffer } from './buffer.js';\nexport { chunk } from './chunk.js';\nexport { concat } from './concat.js';\nexport { count } from './count.js';\nexport { defaultComparison } from './default-comparison.js';\nexport { defaultEquality } from './default-equality.js';\nexport { dict } from './dict.js';\nexport { stringifyEquality } from './stringify-equality.js';\nexport { structuralEquality } from './structural-equality/index.js';\nexport { empty } from './empty.js';\nexport { filter } from './filter.js';\nexport { first } from './first.js';\nexport { flatMap } from './flat-map.js';\nexport { forever } from './forever.js';\nexport { fromArray } from './from-array.js';\nexport { fromGenerator } from './from-generator.js';\nexport { groupBy } from './group-by.js';\nexport { head } from './head.js';\nexport { includes } from './includes.js';\nexport { indexed } from './indexed.js';\nexport { isIterable } from './is-iterable.js';\nexport { set } from './set.js';\nexport { sum } from './sum.js';\nexport { tail } from './tail.js';\nexport { take } from './take.js';\nexport { takeWhile } from './take-while.js';\nexport { join } from './join.js';\nexport { just } from './just.js';\nexport { last } from './last.js';\nexport { map } from './map.js';\nexport { max } from './max.js';\nexport { min } from './min.js';\nexport { none } from './none.js';\nexport { nth } from './nth.js';\nexport { once } from './once.js';\nexport { prepend } from './prepend.js';\nexport { range } from './range.js';\nexport { reduce } from './reduce.js';\nexport { remove } from './remove.js';\nexport { repeat } from './repeat.js';\nexport { reverse } from './reverse.js';\nexport { single } from './single.js';\nexport { skipUntil } from './skip-until.js';\nexport { skip } from './skip.js';\nexport { smoosh } from './smoosh.js';\nexport { sorted } from './sorted.js';\nexport { sortedBy } from './sorted-by.js';\nexport { sortedByDesc } from './sorted-by-desc.js';\nexport { strictEquality } from './strict-equality.js';\nexport { toArray } from './to-array.js';\nexport { unique } from './unique.js';\nexport { update } from './update.js';\nexport { zip } from './zip.js';\n",
     "static": true,
     "longname": "/home/njlr/Documents/onwardlabs/seq/src/index.js",
     "access": "public",
@@ -2929,6 +2929,56 @@
   {
     "__docId__": 130,
     "kind": "file",
+    "name": "src/sorted-by-desc.js",
+    "content": "import { defaultComparison } from './default-comparison.js';\nimport { map } from './map.js';\nimport { toArray } from './to-array.js';\n\nexport const sortedByDesc = (f, c = defaultComparison) => {\n  if (!f) {\n    throw new TypeError('f must be defined');\n  }\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  const reversedComparison = (i, j) => c(j.score, i.score);\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...map(x => ({ score: f(x), value: x }))(xs) ];\n      ys.sort(reversedComparison);\n      yield * map(x => x.value)(ys);\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/njlr/Documents/onwardlabs/seq/src/sorted-by-desc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 131,
+    "kind": "function",
+    "name": "sortedByDesc",
+    "memberof": "src/sorted-by-desc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/sorted-by-desc.js~sortedByDesc",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq",
+    "importStyle": "{sortedByDesc}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "f",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "c",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "defaultComparison",
+        "defaultValue": "defaultComparison"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "file",
     "name": "src/sorted-by.js",
     "content": "import { defaultComparison } from './default-comparison.js';\nimport { map } from './map.js';\nimport { toArray } from './to-array.js';\n\nexport const sortedBy = (f, c = defaultComparison) => {\n  if (!f) {\n    throw new TypeError('f must be defined');\n  }\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  const comparison = (i, j) => c(i.score, j.score);\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...map(x => ({ score: f(x), value: x }))(xs) ];\n      ys.sort(comparison);\n      yield * map(x => x.value)(ys);\n    }\n  });\n};\n",
     "static": true,
@@ -2938,7 +2988,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 131,
+    "__docId__": 133,
     "kind": "function",
     "name": "sortedBy",
     "memberof": "src/sorted-by.js",
@@ -2977,7 +3027,7 @@
     }
   },
   {
-    "__docId__": 132,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/sorted.js",
     "content": "import { defaultComparison } from './default-comparison.js';\nimport { toArray } from './to-array.js';\n\n/** \n * Given an iterable, returns a new iterable with the elements sorted. \n * Note that this function must not be called on an infinite iterable. \n * @param {Object=} c The comparison function to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const sorted = (c = defaultComparison) => {\n  if (!c) {\n    throw new TypeError('c must be defined');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const ys = [ ...xs ];\n      ys.sort(c);\n      yield * ys;\n    }\n  });\n};\n",
@@ -2988,7 +3038,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 133,
+    "__docId__": 135,
     "kind": "function",
     "name": "sorted",
     "memberof": "src/sorted.js",
@@ -3040,7 +3090,7 @@
     }
   },
   {
-    "__docId__": 134,
+    "__docId__": 136,
     "kind": "file",
     "name": "src/strict-equality.js",
     "content": "export const strictEquality = {\n  hashCode: _ => 0, \n  isEqual: (x, y) => x === y,\n};\n",
@@ -3051,7 +3101,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 135,
+    "__docId__": 137,
     "kind": "variable",
     "name": "strictEquality",
     "memberof": "src/strict-equality.js",
@@ -3071,7 +3121,69 @@
     }
   },
   {
-    "__docId__": 136,
+    "__docId__": 138,
+    "kind": "file",
+    "name": "src/stringify-equality.js",
+    "content": "const hashCode = (x) => {\n  const s = JSON.stringify(x);\n\n  let hash = 0;\n  let chr = null;\n\n  if (s.length === 0) {\n    return hash;\n  }\n\n  for (let i = 0; i < s.length; i++) {\n    chr   = s.charCodeAt(i);\n    hash  = ((hash << 5) - hash) + chr;\n    hash |= 0; // Convert to 32bit integer\n  }\n\n  return hash;\n};\n\nexport const stringifyEquality = {\n  hashCode,\n  isEqual: (x, y) => JSON.stringify(x) === JSON.stringify(y),\n};\n",
+    "static": true,
+    "longname": "/home/njlr/Documents/onwardlabs/seq/src/stringify-equality.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 139,
+    "kind": "function",
+    "name": "hashCode",
+    "memberof": "src/stringify-equality.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/stringify-equality.js~hashCode",
+    "access": "public",
+    "export": false,
+    "importPath": "@njlr/seq",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "variable",
+    "name": "stringifyEquality",
+    "memberof": "src/stringify-equality.js",
+    "static": true,
+    "longname": "src/stringify-equality.js~stringifyEquality",
+    "access": "public",
+    "export": true,
+    "importPath": "@njlr/seq",
+    "importStyle": "{stringifyEquality}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"hashCode\": *, \"isEqual\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 141,
     "kind": "file",
     "name": "src/structural-equality/hash-code.js",
     "content": "const hashCodeString = s => {\n  let h = 0;\n\n  for (let i = 0; i < s.length; i++) {\n    h = (h << 5) - h + s.charCodeAt(i) | 0;\n  }\n\n  return h;\n};\n\nconst hashCodeNumber = x => {\n  if (Number.isNaN(x)) {\n    return 0;\n  }\n\n  if (!Number.isFinite(x)) {\n    return 0;\n  }\n\n  return Math.trunc(x) % 2147483647; // A large prime number\n};\n\nconst hashCodeObject = (x, visited) => {\n  let hash = 0;\n\n  for (const [ key, value ] of Object.entries(x)) {\n    hash = ((hash << 5) - hash) +\n      hashCodeString(key) * 7 +\n      hashCode(value, visited);\n    hash = hash & hash;\n  }\n\n  return hash;\n};\n\nexport function hashCode(x, visited = new Set()) {\n  if (x === undefined) {\n    throw new ReferenceError('x must not be undefined');\n  }\n\n  if (x === null) {\n    return 0;\n  }\n\n  if (typeof x === 'number') {\n    return hashCodeNumber(x);\n  }\n\n  if (typeof x === 'string') {\n    return hashCodeString(x);\n  }\n\n  if (typeof x === 'object') {\n    if (visited.has(x)) {\n      return 0;\n    }\n\n    visited.add(x);\n\n    return hashCodeObject(x, visited);\n  }\n\n  return 0;\n};\n",
@@ -3082,7 +3194,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 137,
+    "__docId__": 142,
     "kind": "function",
     "name": "hashCodeString",
     "memberof": "src/structural-equality/hash-code.js",
@@ -3113,7 +3225,7 @@
     "ignore": true
   },
   {
-    "__docId__": 138,
+    "__docId__": 143,
     "kind": "function",
     "name": "hashCodeNumber",
     "memberof": "src/structural-equality/hash-code.js",
@@ -3144,7 +3256,7 @@
     "ignore": true
   },
   {
-    "__docId__": 139,
+    "__docId__": 144,
     "kind": "function",
     "name": "hashCodeObject",
     "memberof": "src/structural-equality/hash-code.js",
@@ -3181,7 +3293,7 @@
     "ignore": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 145,
     "kind": "function",
     "name": "hashCode",
     "memberof": "src/structural-equality/hash-code.js",
@@ -3218,7 +3330,7 @@
     }
   },
   {
-    "__docId__": 141,
+    "__docId__": 146,
     "kind": "file",
     "name": "src/structural-equality/index.js",
     "content": "import { hashCode } from './hash-code.js';\nimport { isEqual } from './is-equal.js';\n\nexport const structuralEquality = {\n  hashCode,\n  isEqual,\n};\n",
@@ -3229,7 +3341,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 142,
+    "__docId__": 147,
     "kind": "variable",
     "name": "structuralEquality",
     "memberof": "src/structural-equality/index.js",
@@ -3249,7 +3361,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 148,
     "kind": "file",
     "name": "src/structural-equality/is-equal.js",
     "content": "export const isEqual = (x, y) => {\n  if (x === undefined) {\n    throw new ReferenceError('x must not be undefined');\n  }\n\n  if (y === undefined) {\n    throw new ReferenceError('y must not be undefined');\n  }\n\n  if (x === y) {\n    return true;\n  }\n\n  if (x === null) {\n    return y === null;\n  }\n\n  if (typeof x === 'number') {\n    return x === y;\n  }\n\n  if (typeof x === 'string') {\n    return x === y;\n  }\n\n  if (typeof x === 'object') {\n    if (typeof y !== 'object') {\n      return false;\n    }\n\n    if (Object.entries(x).length !== Object.entries(y).length) {\n      return false;\n    }\n\n    for (const [ key, value ] of Object.entries(x)) {\n      if (y[key] === undefined) {\n        return false;\n      }\n\n      if (!isEqual(value, y[key])) {\n        return false;\n      }\n    }\n\n    return true;\n  }\n\n  return false;\n};\n",
@@ -3260,7 +3372,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 144,
+    "__docId__": 149,
     "kind": "function",
     "name": "isEqual",
     "memberof": "src/structural-equality/is-equal.js",
@@ -3296,7 +3408,7 @@
     }
   },
   {
-    "__docId__": 145,
+    "__docId__": 150,
     "kind": "file",
     "name": "src/sum.js",
     "content": "/** \n * Sums all elements in an iterable. \n * If the iterable is empty then zero is returned. \n * @param {Object} xs The iterable.\n * @returns {Number}\n */\nexport const sum = xs => {\n  if (!xs || !xs[Symbol.iterator]) {\n    throw new TypeError('xs must be iterable');\n  }\n  let result = 0;\n  for (const x of xs) {\n    result = result + x;\n  }\n  return result;\n};\n",
@@ -3307,7 +3419,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 146,
+    "__docId__": 151,
     "kind": "function",
     "name": "sum",
     "memberof": "src/sum.js",
@@ -3349,7 +3461,7 @@
     }
   },
   {
-    "__docId__": 147,
+    "__docId__": 152,
     "kind": "file",
     "name": "src/tail.js",
     "content": "/** \n * Returns an iterable of all elements except the first. \n * If the iterable is empty then an error is thrown. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const tail = xs => ({\n  [Symbol.iterator]: function * () {\n    let isFirst = true;\n    for (const x of xs) {\n      if (isFirst) {\n        isFirst = false;\n      } else {\n        yield x;\n      }\n    }\n    if (isFirst) {\n      throw new Error('Expected at least one element');\n    }\n  }\n});\n",
@@ -3360,7 +3472,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 148,
+    "__docId__": 153,
     "kind": "function",
     "name": "tail",
     "memberof": "src/tail.js",
@@ -3402,7 +3514,7 @@
     }
   },
   {
-    "__docId__": 149,
+    "__docId__": 154,
     "kind": "file",
     "name": "src/take-while.js",
     "content": "/** \n * Takes elements from an iterable for as long as the elements satisfy a given condition. \n * The first element that does satisfies the condition will not be included. \n * This function is curried. \n * @param {Object} f The function.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const takeWhile = f => {\n  if (!f) {\n    throw new TypeError('f must be a function');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      for (const x of xs) {\n        if (!f(x)) {\n          return;\n        }\n        yield x;\n      }\n    }\n  });\n};\n",
@@ -3413,7 +3525,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 150,
+    "__docId__": 155,
     "kind": "function",
     "name": "takeWhile",
     "memberof": "src/take-while.js",
@@ -3465,7 +3577,7 @@
     }
   },
   {
-    "__docId__": 151,
+    "__docId__": 156,
     "kind": "file",
     "name": "src/take.js",
     "content": "/** \n * Takes the first n elements of an iterable. \n * If there are fewer than n elements in an iterable, then this has no effect. \n * This function is curried. \n * @param {Number} n The number of elements to take.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const take = n => {\n  if (!Number.isSafeInteger(n)) {\n    throw new TypeError('n must be an integer');\n  }\n  if (n < 0) {\n    throw new RangeError('n must be at least zero');\n  }\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      let i = 0;\n      for (const x of xs) {\n        if (i >= n) {\n          return;\n        }\n        yield x;\n        i++;\n      }\n    }\n  });\n};\n",
@@ -3476,7 +3588,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 152,
+    "__docId__": 157,
     "kind": "function",
     "name": "take",
     "memberof": "src/take.js",
@@ -3528,7 +3640,7 @@
     }
   },
   {
-    "__docId__": 153,
+    "__docId__": 158,
     "kind": "file",
     "name": "src/to-array.js",
     "content": "/** \n * Takes an iterable and converts it into an array. \n * This should only be called on finite iterables. \n * @param {Object} xs The iterable.\n * @returns {Array}\n */\nexport const toArray = xs => {\n  if (Array.isArray(xs)) {\n    return xs;\n  }\n  const result = [];\n  for (const x of xs) {\n    result.push(x);\n  }\n  return result;\n};\n",
@@ -3539,7 +3651,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 154,
+    "__docId__": 159,
     "kind": "function",
     "name": "toArray",
     "memberof": "src/to-array.js",
@@ -3581,7 +3693,7 @@
     }
   },
   {
-    "__docId__": 155,
+    "__docId__": 160,
     "kind": "file",
     "name": "src/to-set.js",
     "content": "/** \n * Takes an iterable and converts it into a set. \n * This should only be called on finite iterables. \n * @param {Object} xs The iterable.\n * @returns {Set}\n */\nexport const toSet = xs => {\n  return new Set(xs);\n};\n",
@@ -3592,7 +3704,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 156,
+    "__docId__": 161,
     "kind": "function",
     "name": "toSet",
     "memberof": "src/to-set.js",
@@ -3634,7 +3746,7 @@
     }
   },
   {
-    "__docId__": 157,
+    "__docId__": 162,
     "kind": "file",
     "name": "src/unique.js",
     "content": "import { defaultEquality } from './default-equality.js';\n\n/** \n * Takes an iterable and returns a new one with duplicate elements removed.  \n * The order of the iterable is maintained. \n * This function is curried. \n * @param {Object=} e The equality system to use.\n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const unique = (e = defaultEquality) => {\n  const { hashCode, isEqual } = e;\n  return xs => ({\n    [Symbol.iterator]: function * () {\n      const buckets = new Map();\n      for (const x of xs) {\n        const h = hashCode(x);\n        const bucket = buckets.get(h);\n        if (bucket) {\n          let foundExactMatch = false;\n          for (const y of bucket) {\n            if (isEqual(x, y)) {\n              foundExactMatch = true;\n              break;\n            }\n          }\n          if (!foundExactMatch) {\n            yield x;\n            bucket.push(x);\n          }\n        } else {\n          yield x;\n          buckets.set(h, [ x ]);\n        }\n      }\n    }\n  });\n};\n",
@@ -3645,7 +3757,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 158,
+    "__docId__": 163,
     "kind": "function",
     "name": "unique",
     "memberof": "src/unique.js",
@@ -3697,7 +3809,7 @@
     }
   },
   {
-    "__docId__": 159,
+    "__docId__": 164,
     "kind": "file",
     "name": "src/update.js",
     "content": "/** \n * Takes an iterable and returns a new iterable where\n * the nth element has been updated with the given function.  \n * This function is curried. \n * @param {Number} n The index of the element to replace. \n * @param {Function} f The update function. \n * @param {Object} xs The iterable.\n * @returns {Object}\n */\nexport const update = (n, f) => xs => ({\n  [Symbol.iterator]: function * () {\n    let i = 0;\n    for (const x of xs) {\n      if (i == n) {\n        yield f(x);\n      } else {\n        yield x;\n      }\n      i++;\n    }\n  }\n});\n",
@@ -3708,7 +3820,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 160,
+    "__docId__": 165,
     "kind": "function",
     "name": "update",
     "memberof": "src/update.js",
@@ -3770,7 +3882,7 @@
     }
   },
   {
-    "__docId__": 161,
+    "__docId__": 166,
     "kind": "file",
     "name": "src/zip.js",
     "content": "/** \n * Combines two iterables into one by pairing elements. \n * Each pair is a two element array. \n * The longer of the two iterables will be truncated to match the length of the shorter one.  \n * This function is curried. \n * @param {Object} ys The iterable whose elements will be the second element of the pairs.\n * @param {Object} xs The iterable whose elements will be the first element of the pairs.\n * @returns {Object}\n */\nexport const zip = ys => {\n  if (!ys[Symbol.iterator]) {\n    throw new TypeError('ys must be iterable');\n  }\n  return xs => {\n    if (!xs[Symbol.iterator]) {\n      throw new TypeError('xs must be iterable');\n    }\n    return {\n      [Symbol.iterator]: function * () {\n        const xsGenerator = xs[Symbol.iterator]();\n        const ysGenerator = ys[Symbol.iterator]();\n        while (true) {\n          const x = xsGenerator.next();\n          const y = ysGenerator.next();\n          if (x.done || y.done) {\n            break;\n          }\n          yield [ x.value, y.value ];\n        }\n      }\n    };\n  };\n};\n",
@@ -3781,7 +3893,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 162,
+    "__docId__": 167,
     "kind": "function",
     "name": "zip",
     "memberof": "src/zip.js",
@@ -3842,7 +3954,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@njlr/seq\",\n  \"version\": \"3.4.0\",\n  \"entry\": \"./src/index.js\",\n  \"main\": \"./lib/index.js\",\n  \"repository\": \"git@github.com:njlr/seq.git\",\n  \"author\": \"njlr <njlr@users.noreply.github.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"rollup -c\",\n    \"docs\": \"rm -rf docs && esdoc\",\n    \"test\": \"jest\",\n    \"prepublishOnly\": \"yarn test && yarn build\"\n  },\n  \"jest\": {\n    \"testURL\": \"http://localhost\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.0.0-beta.40\",\n    \"@babel/node\": \"^7.0.0-beta.40\",\n    \"@babel/plugin-proposal-pipeline-operator\": \"^7.0.0-beta.40\",\n    \"@babel/preset-env\": \"^7.0.0-beta.40\",\n    \"core-js\": \"^3.4.1\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^24.9.0\",\n    \"regenerator-runtime\": \"^0.11.1\",\n    \"rollup\": \"^1.27.1\",\n    \"rollup-plugin-babel\": \"^4.0.0-beta.0\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"@njlr/seq\",\n  \"version\": \"3.6.0\",\n  \"entry\": \"./src/index.js\",\n  \"main\": \"./lib/index.js\",\n  \"repository\": \"git@github.com:njlr/seq.git\",\n  \"author\": \"njlr <njlr@users.noreply.github.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"rollup -c\",\n    \"docs\": \"rm -rf docs && esdoc\",\n    \"test\": \"jest\",\n    \"prepublishOnly\": \"yarn test && yarn build\"\n  },\n  \"jest\": {\n    \"testURL\": \"http://localhost\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.0.0-beta.40\",\n    \"@babel/node\": \"^7.0.0-beta.40\",\n    \"@babel/plugin-proposal-pipeline-operator\": \"^7.0.0-beta.40\",\n    \"@babel/preset-env\": \"^7.0.0-beta.40\",\n    \"core-js\": \"^3.4.1\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^24.9.0\",\n    \"regenerator-runtime\": \"^0.11.1\",\n    \"rollup\": \"^1.27.1\",\n    \"rollup-plugin-babel\": \"^4.0.0-beta.0\"\n  }\n}\n",
     "longname": "/home/njlr/Documents/onwardlabs/seq/package.json",
     "name": "package.json",
     "static": true,

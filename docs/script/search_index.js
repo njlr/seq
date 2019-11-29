@@ -264,9 +264,21 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@njlr/seq~sortedbydesc",
+    "function/index.html#static-function-sortedByDesc",
+    "<span>sortedByDesc</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
     "@njlr/seq~strictequality",
     "variable/index.html#static-variable-strictEquality",
     "<span>strictEquality</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "variable"
+  ],
+  [
+    "@njlr/seq~stringifyequality",
+    "variable/index.html#static-variable-stringifyEquality",
+    "<span>stringifyEquality</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "variable"
   ],
   [
@@ -858,6 +870,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/sorted-by-desc.js",
+    "file/src/sorted-by-desc.js.html",
+    "src/sorted-by-desc.js",
+    "file"
+  ],
+  [
     "src/sorted-by.js",
     "file/src/sorted-by.js.html",
     "src/sorted-by.js",
@@ -873,6 +891,12 @@ window.esdocSearchIndex = [
     "src/strict-equality.js",
     "file/src/strict-equality.js.html",
     "src/strict-equality.js",
+    "file"
+  ],
+  [
+    "src/stringify-equality.js",
+    "file/src/stringify-equality.js.html",
+    "src/stringify-equality.js",
     "file"
   ],
   [

@@ -1,6 +1,6 @@
 {
-  "coverage": "79.66%",
-  "expectCount": 59,
+  "coverage": "75.8%",
+  "expectCount": 62,
   "actualCount": 47,
   "files": {
     "src/all.js": {
@@ -211,6 +211,13 @@
         3
       ]
     },
+    "src/sorted-by-desc.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
     "src/sorted-by.js": {
       "expectCount": 1,
       "actualCount": 0,
@@ -228,6 +235,14 @@
       "actualCount": 0,
       "undocumentLines": [
         1
+      ]
+    },
+    "src/stringify-equality.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        20
       ]
     },
     "src/structural-equality/hash-code.js": {
