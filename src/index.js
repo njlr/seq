@@ -23,6 +23,7 @@ export { groupBy } from './group-by.js';
 export { head } from './head.js';
 export { includes } from './includes.js';
 export { indexed } from './indexed.js';
+export { intercalate } from './intercalate.js';
 export { isIterable } from './is-iterable.js';
 export { set } from './set.js';
 export { sum } from './sum.js';

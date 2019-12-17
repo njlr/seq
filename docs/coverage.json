@@ -1,7 +1,7 @@
 {
-  "coverage": "75.8%",
-  "expectCount": 62,
-  "actualCount": 47,
+  "coverage": "76.19%",
+  "expectCount": 63,
+  "actualCount": 48,
   "files": {
     "src/all.js": {
       "expectCount": 1,
@@ -103,6 +103,11 @@
       "undocumentLines": [
         4
       ]
+    },
+    "src/intercalate.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/is-iterable.js": {
       "expectCount": 1,

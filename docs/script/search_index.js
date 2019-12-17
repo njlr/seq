@@ -120,6 +120,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@njlr/seq~intercalate",
+    "function/index.html#static-function-intercalate",
+    "<span>intercalate</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
     "@njlr/seq~isequal",
     "function/index.html#static-function-isEqual",
     "<span>isEqual</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
@@ -741,6 +747,12 @@ window.esdocSearchIndex = [
     "src/indexed.js",
     "file/src/indexed.js.html",
     "src/indexed.js",
+    "file"
+  ],
+  [
+    "src/intercalate.js",
+    "file/src/intercalate.js.html",
+    "src/intercalate.js",
     "file"
   ],
   [
