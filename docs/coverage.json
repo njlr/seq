@@ -1,7 +1,7 @@
 {
-  "coverage": "76.19%",
-  "expectCount": 63,
-  "actualCount": 48,
+  "coverage": "76.56%",
+  "expectCount": 64,
+  "actualCount": 49,
   "files": {
     "src/all.js": {
       "expectCount": 1,
@@ -51,6 +51,11 @@
       "undocumentLines": [
         1
       ]
+    },
+    "src/distinct-until-changed.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/empty.js": {
       "expectCount": 1,

@@ -10,6 +10,7 @@ export { count } from './count.js';
 export { defaultComparison } from './default-comparison.js';
 export { defaultEquality } from './default-equality.js';
 export { dict } from './dict.js';
+export { distinctUntilChanged } from './distinct-until-changed.js';
 export { stringifyEquality } from './stringify-equality.js';
 export { structuralEquality } from './structural-equality/index.js';
 export { empty } from './empty.js';

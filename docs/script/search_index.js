@@ -54,6 +54,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "@njlr/seq~distinctuntilchanged",
+    "function/index.html#static-function-distinctUntilChanged",
+    "<span>distinctUntilChanged</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
     "@njlr/seq~empty",
     "variable/index.html#static-variable-empty",
     "<span>empty</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
@@ -681,6 +687,12 @@ window.esdocSearchIndex = [
     "src/default-equality.js",
     "file/src/default-equality.js.html",
     "src/default-equality.js",
+    "file"
+  ],
+  [
+    "src/distinct-until-changed.js",
+    "file/src/distinct-until-changed.js.html",
+    "src/distinct-until-changed.js",
     "file"
   ],
   [

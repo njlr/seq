@@ -1,6 +1,6 @@
 {
   "name": "@njlr/seq",
-  "version": "3.7.0",
+  "version": "3.8.0",
   "entry": "./src/index.js",
   "main": "./lib/index.js",
   "repository": "git@github.com:njlr/seq.git",
