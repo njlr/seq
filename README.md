@@ -8,14 +8,14 @@ A simple library for manipulating generators and arrays in JavaScript.
 
 Install using [Yarn](https://yarnpkg.com/): 
 
-```bash=
+```bash
 yarn add @njlr/seq
 ```
 
 Install using [NPM](https://www.npmjs.com/): 
 
 
-```bash=
+```bash
 npm install --save @njlr/seq
 ```
 
@@ -33,22 +33,22 @@ You can [browse the documentation on GitHub](https://njlr.github.io/seq/).
 
 ## Demo
 
-```javascript=
+```javascript
 import * as seq from '@njlr/seq';
 
-const x = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] 
+const xs = [ 1, 5, 1, 2, 7, 3, 3, 4, 5, 0 ] 
   |> seq.unique()
   |> seq.map(x => x * 2)
   |> seq.filter(x => x > 4)
   |> seq.sorted()
   |> seq.toArray;
 
-// x is [ 6, 8, 10, 14 ]
+// xs is [ 6, 8, 10, 14 ]
 ```
 
 Since seq works on iterables, you can also use `for...of` loops:
 
-```javascript=
+```javascript
 import * as seq from '@njlr/seq';
 
 for (const x of seq.range(10) |> seq.map(x => x * x)) {
@@ -58,7 +58,7 @@ for (const x of seq.range(10) |> seq.map(x => x * x)) {
 
 This library also plays nicely with spread syntax! 
 
-```javascript=
+```javascript
 const squares = [ ... seq.range(10) |> seq.map(x => x * x) ];
 ```
 
@@ -67,30 +67,30 @@ const squares = [ ... seq.range(10) |> seq.map(x => x * x) ];
 
 Dependencies are managed by Yarn: 
 
-```bash=
+```bash
 yarn install --pure-lockfile
 ```
 
 To run all tests:
 
-```bash=
+```bash
 yarn test
 ```
 
 To build the library:
 
-```bash=
+```bash
 yarn build
 ```
 
 To build the documentation: 
 
-```bash=
+```bash
 yarn docs
 ```
 
 To release a new version:
 
-```bash=
+```bash
 npm publish --access public 
 ```
