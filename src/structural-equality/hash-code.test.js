@@ -93,3 +93,23 @@ test('hashCode works for cyclical objects', () => {
 
   verifyHashCode(x);
 });
+
+test('hashCode ignores object property order', () => {
+  let x = {
+    a: 1,
+    b: [ 'a', 'b', 'c' ],
+    c: 'xyz',
+    d: 123,
+  };
+
+  let y = {
+    c: 'xyz',
+    b: [ 'a', 'b', 'c' ],
+    a: 1,
+    d: 123,
+  };
+
+  verifyHashCode(x);
+
+  expect(hashCode(x)).toEqual(hashCode(y));
+});

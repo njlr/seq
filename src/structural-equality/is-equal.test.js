@@ -30,3 +30,21 @@ test('equals works for simple cases', () => {
     expect(isEqual(b, a)).toEqual(false);
   }
 });
+
+test('isEqual ignores object property order', () => {
+  let x = {
+    a: 1,
+    b: [ 'a', 'b', 'c' ],
+    c: 'xyz',
+    d: 123,
+  };
+
+  let y = {
+    c: 'xyz',
+    b: [ 'a', 'b', 'c' ],
+    a: 1,
+    d: 123,
+  };
+
+  expect(isEqual(x, y)).toEqual(true);
+});

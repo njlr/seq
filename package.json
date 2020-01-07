@@ -1,6 +1,6 @@
 {
   "name": "@njlr/seq",
-  "version": "3.8.0",
+  "version": "3.8.1",
   "entry": "./src/index.js",
   "main": "./lib/index.js",
   "repository": "git@github.com:njlr/seq.git",
@@ -10,6 +10,7 @@
     "build": "rollup -c",
     "docs": "rm -rf docs && esdoc",
     "test": "jest",
+    "prepare": "rollup -c",
     "prepublishOnly": "yarn test && yarn build"
   },
   "jest": {
