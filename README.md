@@ -29,7 +29,7 @@ You can [browse the documentation on GitHub](https://njlr.github.io/seq/).
  * A chain of array functions creates a new array at every stage: the operations are not lazy. 
  * [lodash](https://lodash.com/) and [friends](https://github.com/jussi-kalliokoski/trine) require either a wrapper object or binding for chaining calls. We use the [pipeline operator](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-pipeline-operator) (`|>`) to achieve this at compile-time! 
  * This package is a good citizen. It has no dependencies and does not mutate any global objects. 
-
+ * The code is simple. You can review the whole thing in about an hour. 
 
 ## Demo
 
