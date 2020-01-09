@@ -1,20 +1,20 @@
 {
-  "source": "./src",
+  "source": "./esm",
   "destination": "./docs",
-  "excludes": [ ".+\\.test\\.js" ], 
-  "package": "./package.json", 
+  "excludes": [ ".+\\.test\\.js" ],
+  "package": "./package.json",
   "plugins": [
     {
-      "name": "esdoc-ecmascript-proposal-plugin", 
-      "option": { 
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
         "all": true
       }
     },
     {
       "name": "esdoc-standard-plugin",
       "option": {
-        "lint": { 
-          "enable": false 
+        "lint": {
+          "enable": false
         }
       }
     },

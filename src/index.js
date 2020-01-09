@@ -1,6 +1,7 @@
 /** @module seq */
 
 export { all } from './all.js';
+export { allPairs } from './all-pairs.js';
 export { any } from './any.js';
 export { append } from './append.js';
 export { buffer } from './buffer.js';

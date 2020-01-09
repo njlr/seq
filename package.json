@@ -1,14 +1,15 @@
 {
   "name": "@njlr/seq",
-  "version": "3.8.1",
+  "version": "3.8.2",
   "entry": "./src/index.js",
   "main": "./lib/index.js",
+  "module": "./esm/index.js",
   "repository": "git@github.com:njlr/seq.git",
   "author": "njlr <njlr@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "docs": "rm -rf docs && esdoc",
+    "build": "rollup -c && rollup -c rollup.esm.config.js",
+    "docs": "rollup -c rollup.esm.config.js && rm -rf docs && esdoc",
     "test": "jest",
     "prepare": "rollup -c",
     "prepublishOnly": "yarn test && yarn build"
@@ -17,10 +18,10 @@
     "testURL": "http://localhost"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.40",
-    "@babel/node": "^7.0.0-beta.40",
-    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.40",
-    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-pipeline-operator": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "core-js": "^3.4.1",
     "esdoc": "^1.0.4",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",

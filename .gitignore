@@ -1,6 +1,7 @@
 /node_modules/
 /lib/
 /out/
+/esm/
 /docs/
 /npm-error.log
 /yarn-error.log

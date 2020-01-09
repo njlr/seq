@@ -6,6 +6,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@njlr/seq~allpairs",
+    "function/index.html#static-function-allPairs",
+    "<span>allPairs</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
+  ],
+  [
     "@njlr/seq~any",
     "function/index.html#static-function-any",
     "<span>any</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
@@ -52,6 +58,12 @@ window.esdocSearchIndex = [
     "variable/index.html#static-variable-defaultEquality",
     "<span>defaultEquality</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "variable"
+  ],
+  [
+    "@njlr/seq~dict",
+    "function/index.html#static-function-dict",
+    "<span>dict</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "function"
   ],
   [
     "@njlr/seq~distinctuntilchanged",
@@ -102,9 +114,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "@njlr/seq~hashcode",
-    "function/index.html#static-function-hashCode",
-    "<span>hashCode</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
+    "@njlr/seq~groupby",
+    "function/index.html#static-function-groupBy",
+    "<span>groupBy</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
@@ -129,12 +141,6 @@ window.esdocSearchIndex = [
     "@njlr/seq~intercalate",
     "function/index.html#static-function-intercalate",
     "<span>intercalate</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
-    "function"
-  ],
-  [
-    "@njlr/seq~isequal",
-    "function/index.html#static-function-isEqual",
-    "<span>isEqual</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
     "function"
   ],
   [
@@ -330,12 +336,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "@njlr/seq~toset",
-    "function/index.html#static-function-toSet",
-    "<span>toSet</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
-    "function"
-  ],
-  [
     "@njlr/seq~unique",
     "function/index.html#static-function-unique",
     "<span>unique</span> <span class=\"search-result-import-path\">@njlr/seq</span>",
@@ -354,645 +354,291 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "src/.external-ecmascript.js~array",
+    "esm/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "src/.external-ecmascript.js~Array",
+    "esm/.external-ecmascript.js~Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~arraybuffer",
+    "esm/.external-ecmascript.js~arraybuffer",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "src/.external-ecmascript.js~ArrayBuffer",
+    "esm/.external-ecmascript.js~ArrayBuffer",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~boolean",
+    "esm/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "src/.external-ecmascript.js~Boolean",
+    "esm/.external-ecmascript.js~Boolean",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~dataview",
+    "esm/.external-ecmascript.js~dataview",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "src/.external-ecmascript.js~DataView",
+    "esm/.external-ecmascript.js~DataView",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~date",
+    "esm/.external-ecmascript.js~date",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "src/.external-ecmascript.js~Date",
+    "esm/.external-ecmascript.js~Date",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~error",
+    "esm/.external-ecmascript.js~error",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "src/.external-ecmascript.js~Error",
+    "esm/.external-ecmascript.js~Error",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~evalerror",
+    "esm/.external-ecmascript.js~evalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "src/.external-ecmascript.js~EvalError",
+    "esm/.external-ecmascript.js~EvalError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~float32array",
+    "esm/.external-ecmascript.js~float32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "src/.external-ecmascript.js~Float32Array",
+    "esm/.external-ecmascript.js~Float32Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~float64array",
+    "esm/.external-ecmascript.js~float64array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "src/.external-ecmascript.js~Float64Array",
+    "esm/.external-ecmascript.js~Float64Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~function",
+    "esm/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "src/.external-ecmascript.js~Function",
+    "esm/.external-ecmascript.js~Function",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~generator",
+    "esm/.external-ecmascript.js~generator",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "src/.external-ecmascript.js~Generator",
+    "esm/.external-ecmascript.js~Generator",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~generatorfunction",
+    "esm/.external-ecmascript.js~generatorfunction",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "src/.external-ecmascript.js~GeneratorFunction",
+    "esm/.external-ecmascript.js~GeneratorFunction",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~infinity",
+    "esm/.external-ecmascript.js~infinity",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "src/.external-ecmascript.js~Infinity",
+    "esm/.external-ecmascript.js~Infinity",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~int16array",
+    "esm/.external-ecmascript.js~int16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "src/.external-ecmascript.js~Int16Array",
+    "esm/.external-ecmascript.js~Int16Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~int32array",
+    "esm/.external-ecmascript.js~int32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "src/.external-ecmascript.js~Int32Array",
+    "esm/.external-ecmascript.js~Int32Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~int8array",
+    "esm/.external-ecmascript.js~int8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "src/.external-ecmascript.js~Int8Array",
+    "esm/.external-ecmascript.js~Int8Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~internalerror",
+    "esm/.external-ecmascript.js~internalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "src/.external-ecmascript.js~InternalError",
+    "esm/.external-ecmascript.js~InternalError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~json",
+    "esm/.external-ecmascript.js~json",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "src/.external-ecmascript.js~JSON",
+    "esm/.external-ecmascript.js~JSON",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~map",
+    "esm/.external-ecmascript.js~map",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "src/.external-ecmascript.js~Map",
+    "esm/.external-ecmascript.js~Map",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~nan",
+    "esm/.external-ecmascript.js~nan",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "src/.external-ecmascript.js~NaN",
+    "esm/.external-ecmascript.js~NaN",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~number",
+    "esm/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "src/.external-ecmascript.js~Number",
+    "esm/.external-ecmascript.js~Number",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~object",
+    "esm/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "src/.external-ecmascript.js~Object",
+    "esm/.external-ecmascript.js~Object",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~promise",
+    "esm/.external-ecmascript.js~promise",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "src/.external-ecmascript.js~Promise",
+    "esm/.external-ecmascript.js~Promise",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~proxy",
+    "esm/.external-ecmascript.js~proxy",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "src/.external-ecmascript.js~Proxy",
+    "esm/.external-ecmascript.js~Proxy",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~rangeerror",
+    "esm/.external-ecmascript.js~rangeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "src/.external-ecmascript.js~RangeError",
+    "esm/.external-ecmascript.js~RangeError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~referenceerror",
+    "esm/.external-ecmascript.js~referenceerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "src/.external-ecmascript.js~ReferenceError",
+    "esm/.external-ecmascript.js~ReferenceError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~reflect",
+    "esm/.external-ecmascript.js~reflect",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "src/.external-ecmascript.js~Reflect",
+    "esm/.external-ecmascript.js~Reflect",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~regexp",
+    "esm/.external-ecmascript.js~regexp",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "src/.external-ecmascript.js~RegExp",
+    "esm/.external-ecmascript.js~RegExp",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~set",
+    "esm/.external-ecmascript.js~set",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "src/.external-ecmascript.js~Set",
+    "esm/.external-ecmascript.js~Set",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~string",
+    "esm/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "src/.external-ecmascript.js~String",
+    "esm/.external-ecmascript.js~String",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~symbol",
+    "esm/.external-ecmascript.js~symbol",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "src/.external-ecmascript.js~Symbol",
+    "esm/.external-ecmascript.js~Symbol",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~syntaxerror",
+    "esm/.external-ecmascript.js~syntaxerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "src/.external-ecmascript.js~SyntaxError",
+    "esm/.external-ecmascript.js~SyntaxError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~typeerror",
+    "esm/.external-ecmascript.js~typeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "src/.external-ecmascript.js~TypeError",
+    "esm/.external-ecmascript.js~TypeError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~urierror",
+    "esm/.external-ecmascript.js~urierror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "src/.external-ecmascript.js~URIError",
+    "esm/.external-ecmascript.js~URIError",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~uint16array",
+    "esm/.external-ecmascript.js~uint16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "src/.external-ecmascript.js~Uint16Array",
+    "esm/.external-ecmascript.js~Uint16Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~uint32array",
+    "esm/.external-ecmascript.js~uint32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "src/.external-ecmascript.js~Uint32Array",
+    "esm/.external-ecmascript.js~Uint32Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~uint8array",
+    "esm/.external-ecmascript.js~uint8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "src/.external-ecmascript.js~Uint8Array",
+    "esm/.external-ecmascript.js~Uint8Array",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~uint8clampedarray",
+    "esm/.external-ecmascript.js~uint8clampedarray",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "src/.external-ecmascript.js~Uint8ClampedArray",
+    "esm/.external-ecmascript.js~Uint8ClampedArray",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~weakmap",
+    "esm/.external-ecmascript.js~weakmap",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "src/.external-ecmascript.js~WeakMap",
+    "esm/.external-ecmascript.js~WeakMap",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~weakset",
+    "esm/.external-ecmascript.js~weakset",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "src/.external-ecmascript.js~WeakSet",
+    "esm/.external-ecmascript.js~WeakSet",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~boolean",
+    "esm/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "src/.external-ecmascript.js~boolean",
+    "esm/.external-ecmascript.js~boolean",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~function",
+    "esm/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "src/.external-ecmascript.js~function",
+    "esm/.external-ecmascript.js~function",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~null",
+    "esm/.external-ecmascript.js~null",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "src/.external-ecmascript.js~null",
+    "esm/.external-ecmascript.js~null",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~number",
+    "esm/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "src/.external-ecmascript.js~number",
+    "esm/.external-ecmascript.js~number",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~object",
+    "esm/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "src/.external-ecmascript.js~object",
+    "esm/.external-ecmascript.js~object",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~string",
+    "esm/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "src/.external-ecmascript.js~string",
+    "esm/.external-ecmascript.js~string",
     "external"
   ],
   [
-    "src/.external-ecmascript.js~undefined",
+    "esm/.external-ecmascript.js~undefined",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "src/.external-ecmascript.js~undefined",
+    "esm/.external-ecmascript.js~undefined",
     "external"
   ],
   [
-    "src/all.js",
-    "file/src/all.js.html",
-    "src/all.js",
-    "file"
-  ],
-  [
-    "src/any.js",
-    "file/src/any.js.html",
-    "src/any.js",
-    "file"
-  ],
-  [
-    "src/append.js",
-    "file/src/append.js.html",
-    "src/append.js",
-    "file"
-  ],
-  [
-    "src/buffer.js",
-    "file/src/buffer.js.html",
-    "src/buffer.js",
-    "file"
-  ],
-  [
-    "src/chunk.js",
-    "file/src/chunk.js.html",
-    "src/chunk.js",
-    "file"
-  ],
-  [
-    "src/concat.js",
-    "file/src/concat.js.html",
-    "src/concat.js",
-    "file"
-  ],
-  [
-    "src/count.js",
-    "file/src/count.js.html",
-    "src/count.js",
-    "file"
-  ],
-  [
-    "src/default-comparison.js",
-    "file/src/default-comparison.js.html",
-    "src/default-comparison.js",
-    "file"
-  ],
-  [
-    "src/default-equality.js",
-    "file/src/default-equality.js.html",
-    "src/default-equality.js",
-    "file"
-  ],
-  [
-    "src/distinct-until-changed.js",
-    "file/src/distinct-until-changed.js.html",
-    "src/distinct-until-changed.js",
-    "file"
-  ],
-  [
-    "src/empty.js",
-    "file/src/empty.js.html",
-    "src/empty.js",
-    "file"
-  ],
-  [
-    "src/filter.js",
-    "file/src/filter.js.html",
-    "src/filter.js",
-    "file"
-  ],
-  [
-    "src/first.js",
-    "file/src/first.js.html",
-    "src/first.js",
-    "file"
-  ],
-  [
-    "src/flat-map.js",
-    "file/src/flat-map.js.html",
-    "src/flat-map.js",
-    "file"
-  ],
-  [
-    "src/forever.js",
-    "file/src/forever.js.html",
-    "src/forever.js",
-    "file"
-  ],
-  [
-    "src/from-array.js",
-    "file/src/from-array.js.html",
-    "src/from-array.js",
-    "file"
-  ],
-  [
-    "src/from-generator.js",
-    "file/src/from-generator.js.html",
-    "src/from-generator.js",
-    "file"
-  ],
-  [
-    "src/head.js",
-    "file/src/head.js.html",
-    "src/head.js",
-    "file"
-  ],
-  [
-    "src/includes.js",
-    "file/src/includes.js.html",
-    "src/includes.js",
-    "file"
-  ],
-  [
-    "src/index.js",
-    "file/src/index.js.html",
-    "src/index.js",
-    "file"
-  ],
-  [
-    "src/indexed.js",
-    "file/src/indexed.js.html",
-    "src/indexed.js",
-    "file"
-  ],
-  [
-    "src/intercalate.js",
-    "file/src/intercalate.js.html",
-    "src/intercalate.js",
-    "file"
-  ],
-  [
-    "src/is-iterable.js",
-    "file/src/is-iterable.js.html",
-    "src/is-iterable.js",
-    "file"
-  ],
-  [
-    "src/join.js",
-    "file/src/join.js.html",
-    "src/join.js",
-    "file"
-  ],
-  [
-    "src/just.js",
-    "file/src/just.js.html",
-    "src/just.js",
-    "file"
-  ],
-  [
-    "src/last.js",
-    "file/src/last.js.html",
-    "src/last.js",
-    "file"
-  ],
-  [
-    "src/map.js",
-    "file/src/map.js.html",
-    "src/map.js",
-    "file"
-  ],
-  [
-    "src/max.js",
-    "file/src/max.js.html",
-    "src/max.js",
-    "file"
-  ],
-  [
-    "src/min.js",
-    "file/src/min.js.html",
-    "src/min.js",
-    "file"
-  ],
-  [
-    "src/none.js",
-    "file/src/none.js.html",
-    "src/none.js",
-    "file"
-  ],
-  [
-    "src/nth.js",
-    "file/src/nth.js.html",
-    "src/nth.js",
-    "file"
-  ],
-  [
-    "src/once.js",
-    "file/src/once.js.html",
-    "src/once.js",
-    "file"
-  ],
-  [
-    "src/prepend.js",
-    "file/src/prepend.js.html",
-    "src/prepend.js",
-    "file"
-  ],
-  [
-    "src/range.js",
-    "file/src/range.js.html",
-    "src/range.js",
-    "file"
-  ],
-  [
-    "src/reduce.js",
-    "file/src/reduce.js.html",
-    "src/reduce.js",
-    "file"
-  ],
-  [
-    "src/remove.js",
-    "file/src/remove.js.html",
-    "src/remove.js",
-    "file"
-  ],
-  [
-    "src/repeat.js",
-    "file/src/repeat.js.html",
-    "src/repeat.js",
-    "file"
-  ],
-  [
-    "src/reverse.js",
-    "file/src/reverse.js.html",
-    "src/reverse.js",
-    "file"
-  ],
-  [
-    "src/set.js",
-    "file/src/set.js.html",
-    "src/set.js",
-    "file"
-  ],
-  [
-    "src/single.js",
-    "file/src/single.js.html",
-    "src/single.js",
-    "file"
-  ],
-  [
-    "src/skip-until.js",
-    "file/src/skip-until.js.html",
-    "src/skip-until.js",
-    "file"
-  ],
-  [
-    "src/skip.js",
-    "file/src/skip.js.html",
-    "src/skip.js",
-    "file"
-  ],
-  [
-    "src/smoosh.js",
-    "file/src/smoosh.js.html",
-    "src/smoosh.js",
-    "file"
-  ],
-  [
-    "src/sorted-by-desc.js",
-    "file/src/sorted-by-desc.js.html",
-    "src/sorted-by-desc.js",
-    "file"
-  ],
-  [
-    "src/sorted-by.js",
-    "file/src/sorted-by.js.html",
-    "src/sorted-by.js",
-    "file"
-  ],
-  [
-    "src/sorted.js",
-    "file/src/sorted.js.html",
-    "src/sorted.js",
-    "file"
-  ],
-  [
-    "src/strict-equality.js",
-    "file/src/strict-equality.js.html",
-    "src/strict-equality.js",
-    "file"
-  ],
-  [
-    "src/stringify-equality.js",
-    "file/src/stringify-equality.js.html",
-    "src/stringify-equality.js",
-    "file"
-  ],
-  [
-    "src/structural-equality/hash-code.js",
-    "file/src/structural-equality/hash-code.js.html",
-    "src/structural-equality/hash-code.js",
-    "file"
-  ],
-  [
-    "src/structural-equality/index.js",
-    "file/src/structural-equality/index.js.html",
-    "src/structural-equality/index.js",
-    "file"
-  ],
-  [
-    "src/structural-equality/is-equal.js",
-    "file/src/structural-equality/is-equal.js.html",
-    "src/structural-equality/is-equal.js",
-    "file"
-  ],
-  [
-    "src/sum.js",
-    "file/src/sum.js.html",
-    "src/sum.js",
-    "file"
-  ],
-  [
-    "src/tail.js",
-    "file/src/tail.js.html",
-    "src/tail.js",
-    "file"
-  ],
-  [
-    "src/take-while.js",
-    "file/src/take-while.js.html",
-    "src/take-while.js",
-    "file"
-  ],
-  [
-    "src/take.js",
-    "file/src/take.js.html",
-    "src/take.js",
-    "file"
-  ],
-  [
-    "src/to-array.js",
-    "file/src/to-array.js.html",
-    "src/to-array.js",
-    "file"
-  ],
-  [
-    "src/to-set.js",
-    "file/src/to-set.js.html",
-    "src/to-set.js",
-    "file"
-  ],
-  [
-    "src/unique.js",
-    "file/src/unique.js.html",
-    "src/unique.js",
-    "file"
-  ],
-  [
-    "src/update.js",
-    "file/src/update.js.html",
-    "src/update.js",
-    "file"
-  ],
-  [
-    "src/zip.js",
-    "file/src/zip.js.html",
-    "src/zip.js",
+    "esm/index.js",
+    "file/esm/index.js.html",
+    "esm/index.js",
     "file"
   ]
 ]
