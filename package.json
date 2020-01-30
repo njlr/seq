@@ -11,7 +11,7 @@
     "build": "rollup -c && rollup -c rollup.esm.config.js",
     "docs": "rollup -c rollup.esm.config.js && rm -rf docs && esdoc",
     "test": "jest",
-    "prepare": "rollup -c",
+    "prepare": "rollup -c && rollup -c rollup.esm.config.js",
     "prepublishOnly": "yarn test && yarn build"
   },
   "jest": {
